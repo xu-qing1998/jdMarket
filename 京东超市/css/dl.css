@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.w {
+    width: 990px;
+    margin: 0 auto;
+}
+
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+input,
+button {
+    border: none;
+    outline: 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.jdlogo img {
+    width: 170px;
+    height: 60px;
+    float: left;
+}
+
+.jdlogo {
+    position: relative;
+    width: 300px;
+    height: 60px;
+    margin: 10px 0;
+}
+
+.jdlogo div {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 110px;
+    height: 40px;
+    background: url(../img/huanying.png) no-repeat;
+    margin-left: 10px;
+}
+
+.w>a {
+    position: relative;
+    color: #999999;
+    float: right;
+    top: -30px;
+}
+
+.w>a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.tips {
+    background: #fff8f0;
+    width: 100%;
+    display: inline-block;
+    margin-top: -20px;
+}
+
+.tips p {
+    margin: 0 auto;
+    width: 990px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    font-family: "宋体";
+    text-align: center;
+    padding: 10px 0;
+    color: #999999;
+    background: #fff8f0;
+}
+
+.tips a {
+    color: #333333;
+}
+
+.tips-inner {
+    position: relative;
+}
+
+.tips-logo {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 80px;
+    margin-top: 21px;
+    background: url(../img/icon-tips.png);
+}
+
+.form-tips .tips-logo {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 20px;
+    top: -12px;
+    background: url(../img/icon-tips.png);
+}
+
+.main {
+    position: relative;
+    height: 475px;
+    margin: 10px 0 20px;
+    margin-top: 0;
+}
+
+.main .form {
+    float: right;
+    top: 10px;
+}
+
+.form {
+    position: relative;
+    background-color: #fff;
+    width: 346px;
+    height: 400px;
+    z-index: 1;
+}
+
+.form-tips p {
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    color: #999999;
+    background: #fff8f0;
+    font-size: 12px;
+    font-family: "宋体";
+}
+
+.form-tab a {
+    text-decoration: none;
+}
+
+.form-tabl,
+.form-tabr {
+    position: absolute;
+    width: 173px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid #f4f4f4;
+    display: block;
+}
+
+.form-tabl a {
+    color: #E4393C;
+}
+
+.form-tabr {
+    right: 0;
+}
+
+.show-main {
+    position: relative;
+    height: 168px;
+    margin-bottom: 50px;
+}
+
+.form-show {
+    width: 306px;
+    padding: 20px 18px 20px 20px;
+    margin-top: 60px;
+}
+
+.form-password {
+    position: relative;
+    /* top: -250px; */
+    /* left: 40px; */
+}
+
+.login-user,
+.login-pwd {
+    border: 1px solid #bdbdbd;
+    height: 38px;
+    margin-bottom: 20px;
+}
+
+.lable-name {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+    background: url(../img/pwd-icons-new.png) no-repeat 0 0;
+}
+
+.lable-pwd {
+    position: absolute;
+    top: 61px;
+    left: 1px;
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+    background: url(../img/pwd-icons-new.png) no-repeat -48px 0;
+}
+
+.forgetpwd {
+    float: right;
+    color: #666666;
+    font-size: 12px;
+}
+
+#loginname,
+#loginpwd {
+    height: 18px;
+    line-height: 18px;
+    /* width: 204px; */
+    overflow: hidden;
+    padding: 10px 0 10px 50px;
+    font-size: 14px;
+}
+
+.denglu {
+    position: relative;
+    top: 40px;
+    border: 1px solid #cb2a2d;
+    height: 32px;
+    width: 300px;
+    /* background-color: #e85356; */
+}
+
+.denglu-a {
+    border: 1px solid #e85356;
+    display: block;
+    background-color: #e4393c;
+    height: 31px;
+    line-height: 31px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.show-mainl {
+    position: absolute;
+    left: 64px;
+    border: 1px solid #f4f4f4;
+    padding: 8px;
+    width: 155px;
+}
+
+.show-tips {
+    height: 18px;
+    width: 257px;
+    line-height: 18px;
+    margin: 18px auto 14px;
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    position: absolute;
+    top: 160px;
+    left: 30px;
+}
+
+.show-tips p {
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.form-quick {
+    position: relative;
+    top: -20px;
+    left: 0;
+    margin-top: 40px;
+}
+
+.form-quick p {
+    display: inline-block;
+    font-size: 12px;
+    color: #999999;
+    padding: 0 20px;
+}
+
+.login {
+    /* position: relative;
+    top: -180px; */
+    border-top: 1px solid #f4f4f4;
+    background: #fcfcfc;
+    line-height: 50px;
+    height: 50px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.login-left a {
+    position: relative;
+    padding: 0 20px;
+    float: left;
+}
+
+.qq {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 19px;
+    height: 18px;
+    background: url(../img/QQ-weixin.png) no-repeat 0 0;
+}
+
+.b {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    width: 19px;
+    height: 18px;
+    background: url(../img/QQ-weixin.png) no-repeat -20px 0;
+}
+
+.login-right {
+    position: relative;
+    float: right;
+    right: 20px;
+}
+
+.login-right i {
+    position: absolute;
+    left: -22px;
+    top: 17px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/pwd-icons-new.png)no-repeat -104px -75px;
+}
+
+.main-inner {
+    position: absolute;
+    width: 100%;
+    height: 475px;
+    background-color: #B10008;
+}
+
+.inner-bg {
+    height: 475px;
+    z-index: 1;
+    background: url(../img/dlbg.jpg) no-repeat 0 0;
+}
+
+.footer {
+    /* width: 990px; */
+    height: 100px;
+    text-align: center;
+}
+
+.footer a {
+    font-size: 12px;
+    color: #666666;
+}
+
+.footer a:hover {
+    color: red;
+}
+
+.footer-top span {
+    margin: 0 10px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.footer-bottom {
+    margin: 10px 0;
+    font-size: 12px;
+    color: #666666;
+}

@@ -1,0 +1,649 @@
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			@font-face {
+			  font-family: 'icomoon';
+			  src:  url('fonts/icomoon.eot?erqdbu');
+			  src:  url('fonts/icomoon.eot?erqdbu#iefix') format('embedded-opentype'),
+			    url('fonts/icomoon.ttf?erqdbu') format('truetype'),
+			    url('fonts/icomoon.woff?erqdbu') format('woff'),
+			    url('fonts/icomoon.svg?erqdbu#icomoon') format('svg');
+			  font-weight: normal;
+			  font-style: normal;
+			  font-display: block;
+			}
+			span{
+				font-family: 'icomoon';
+			}
+			li{
+				list-style: none;
+				float: left;
+			}
+			a{
+				text-decoration: none;
+			}
+			.top{
+				width: 100%;
+				height: 80px;
+				background-color: black;
+				text-align: center;
+			}
+			.top-nav{
+				width: 100%;
+				height: 30px;
+				background-color: #e3e4e5;
+			}
+			.top-nav .w{
+				width: 1190px;
+				height: 30px;
+				margin: 0 auto;
+				/*background-color: pink;*/
+				line-height: 30px;
+				position: relative;
+			}
+			.top-nav .top-address{
+				width: 50px;
+				height: 30px;
+				margin-left: 150px;
+				/*background-color: yellow;*/
+			}
+			.top-address span{
+				
+				color: red;
+			}
+			.top-right{
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			.top-right li{
+				float: left;
+				margin: 0 5px;
+			}
+			.top-nav a{
+				color: #9D9D9D;
+				font-size: 14px;
+			}
+			.top-right select{
+				outline: none;
+				font-size: 14px;
+				border: 0;
+				background-color: #E3E4E5;
+				color: #9D9D9D;
+			}
+			.header{
+				width: 100%;
+				height: 150px;
+				background-color: rgba(245,245,245,.2);
+				position: relative;
+			}
+			.header-box{
+				width: 1190px;
+				height: 150px;
+				/*margin: 0 auto;*/
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -595px;
+			}
+			.header-car span{
+				color: red;
+			}
+			.header-logo{
+				position: absolute;
+				top: -30px;
+				left: 0;
+			}
+			.seach{
+				width: 550px;
+				height: 40px;
+				/*background-color: deepskyblue;*/
+				position: absolute;
+				top: 20px;
+				left: 50%;
+				margin-left: -275px;
+			}
+			.seach input{
+				width: 538px;
+				height: 38px;
+				line-height: 38px;
+				border:1px solid red;
+				outline: none;
+				font-size: 16px;
+				padding-left: 10px;
+			}
+			.seach button span{
+				color: #fff;
+				font-size: 18px;
+			}
+			.seach .photograph{
+				width: 20px;
+				height: 15px;
+				display: inline-block;
+				background: url(../img/sprite-search.png)0 0;
+				position: absolute;
+				right:60px;
+				top: 12px;
+			}
+			.seach .photograph:hover{
+				background: url(../img/sprite-search.png)-30px 0;
+			}
+			.seach button{
+				background-color: red;
+				width: 50px;
+				height: 40px;
+				border: 0;
+				position: absolute;
+				right: 0;
+			}
+			.header-car{
+				width: 180px;
+				height: 38px;
+				/*background-color: yellow;*/
+				text-align: center;
+				line-height: 38px;
+				border: 1px solid #ccc;
+				position: absolute;
+				top: 20px;
+				right: 100px;
+			}
+			.header-car img{
+				vertical-align: middle;
+			}
+			.header-car a{
+				color: red;
+				font-size: 12px;
+			}
+			.header-car s{
+				text-decoration: none;
+				background-color: #f10215;
+				border-radius: 8px;
+				font-size: 12px;
+				width: 13px;
+				height: 16px;
+				text-align: center;
+				line-height: 16px;
+				color: #fff;
+				position: absolute;
+				top: 7px;
+				right: 35px;
+			}
+			.header-erweima{
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			.header-two{
+				width: 600px;
+				height: 20px ;
+				/*background-color: yellow;*/
+				position: absolute;
+				top: 70px;
+				left: 50%;
+				margin-left: -280px;
+			}
+			.header-two li{
+				margin: 0 2px;
+			}
+			.header-two a{
+				color: #9E9B99;
+				font-size: 12px;
+			}
+			.header-nav{
+				width: 800px;
+				height: 40px;
+				line-height: 40px;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				margin-left: -400px;
+			}
+			.header-nav li{
+				margin: 0 15px;
+			}
+			.header-nav a{
+				font-size: 16px;
+				color: #555A5F;
+				font-weight: 700;
+			}
+			.header-nav em{
+				margin-left: 15px;
+			}
+			.header-note{
+				width: 190px;
+				height: 40px;
+				position: absolute;
+				bottom: 10px;
+				right: 0;
+			}
+			.content{
+				width: 100%;
+				height: 480px;
+				background-color: rgba(245,245,245,.2);
+				position: relative;
+			}
+			.main{
+				width: 1920px;
+				height: 480px;
+				/*background-color: #ddd;*/
+				background: url(../img/bg.png)no-repeat;
+				/*margin: 0 auto;*/
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -960px;
+			}
+			/*.main>div{
+				float: left;
+			}*/
+			.main .main-navleft{
+				background-color:#6E6568;
+				width: 190px;
+				height: 480px;
+				position: absolute;
+				left: 365px;
+				top: 0;
+			}
+			.main-navleft ul{
+				padding-top: 15px;
+				width: 190px;
+				height: 465px;
+			}
+			.main-navleft li{
+				float: none;
+				width: 180px;
+				height: 28px;
+				padding-left: 10px;
+			}
+			.main-navleft a{
+				width: 180px;
+				height: 28px;
+				line-height: 28px;
+				font-size: 14px;
+				color: #fff;
+			}
+			.main-navleft span{
+				color: #fff;
+				font-size: 14px;
+			}
+	/*中间右侧内容样式*/
+			.main .main-navright{
+				width: 190px;
+				height: 480px;
+				position: absolute;
+				right: 365px;
+				top: 0;
+			}
+			.main-r-top{
+				width: 160px;
+				height: 95px;
+				padding: 20px 15px 0px;
+				background-color: pink;
+			}
+			.main-r-top .huanyingyu{
+				width: 100px;
+				height: 40px;
+				padding-left: 54px;
+				position: relative;
+			}
+			.huanyingyu a{
+				font-size: 12px;
+				color: #747474;
+			}
+			.huanyingyu .h-img{
+				width: 40px;
+				height: 40px;
+				/*border-radius: 50%;*/
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.h-img img{
+				border-radius: 50%;
+				display: inline-block;
+			}
+			.huanyingyu .h-text{
+				font-size: 12px;
+				color: #747474;
+			}
+			.huanyingyu .h:hover{
+				color: red;
+			}
+			.main-r-top .fuli{
+				width: 160px;
+				height: 48px;
+			}
+			.fuli a{
+				width: 70px;
+				height: 24px;
+				display: inline-block;
+				border: 2px solid red;
+				color: red;
+				line-height: 24px;
+				font-size: 12px;
+				text-align: center;
+				margin:20px 2px 0 0;
+			}
+			.fuli a:hover{
+				color: #fff;
+				background-color: red;
+			}
+		/*中间右侧中间部分样式*/
+			.main-r-middle{
+				width: 160px;
+				height: 149px;
+				padding: 5px 15px 0;
+				border-bottom: 1px solid #ccc ;
+				border-top:1px solid #ccc ;
+			} 
+			/*中间导航*/
+			.m-tips{
+				width: 160px;
+				height: 18px;
+				padding: 3px 0;
+				border-bottom: 1px solid #ccc;
+				position: relative;
+			}
+			.m-tips li{
+				margin-right: 4px;
+			}
+			.m-tips a{
+				height: 18px;
+				line-height: 18px;
+				display: inline-block;
+				color: #747474;
+				font-size: 12px;
+			}
+			.m-tips .line{
+				border-bottom: 2px solid red;
+			}
+			.m-tips .more{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+			/*中间内容*/
+			.m-ul{
+				width: 160px;
+				height: 92px;
+				margin-top: 10px;
+			}
+			.m-ul li{
+				width: 160px;
+				height: 23px;
+				line-height: 23px;
+			}
+			.m-ul a{
+				color: #747474;
+				font-size: 12px;
+			}
+			
+		/*y右侧下面样式*/
+			.main-r-footer{
+				width: 190px;
+				height: 209px;
+			}
+			.main-r-footer table{
+				border-collapse: collapse;
+				border: 0px solid #ccc;
+			}
+			.main-r-footer td{
+				width: 48px;
+				height: 70px;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				border-top: 0;
+				border-right: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+				border-left: 0;
+			}
+			.main-r-footer table tr.lastrow td {
+				border-bottom: 0;
+			}
+	
+			.main-r-footer table tr td.lastCol {
+				border-right: 0;
+			}
+			.main-r-footer a{
+				width: 24px;
+				height: 24px;
+				overflow: hidden;
+				display: inline-block;
+			}
+			.main-r-footer td p{
+				color: #747474;
+				font-size: 12px;
+			}
+			.main .pic1{
+				left: 565px;
+			} 
+			.main .pic2{
+				right: 565px;
+			}
+/*轮播图样式*/
+			.main .photo-lunbo{
+				width: 790px;
+				height: 340px;
+				background-color: pink;
+				margin: 0 10px;
+				position: absolute;
+				left: 555px;
+				top: 0;
+			}
+			.photo-lunbo a{
+				width: 24px;
+				height: 36px;
+				display: inline-block;
+			}
+			.photo-lunbo .left{
+				background:url(../img/left.png)no-repeat;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				margin-top: -18px;
+			}
+			
+			.photo-lunbo .right{
+				background:url(../img/right.png)no-repeat;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				margin-top: -18px;
+			}
+			.photo-lunbo .lunbo-point{
+				width: 180px;
+				height: 20px;
+				border-radius: 8px;
+				background-color: rgba(255,255,255,.5);
+				position: absolute;
+				bottom: 20px;
+				left: 50%;
+				margin-left: -90px;
+			}
+			.photo-lunbo li{
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				margin: 4px 5px ;
+				background-color: #fff;
+			}
+			.main .photo-shopright{
+				width: 390px;
+				/*background-color: red;*/
+				position: absolute;
+				top: 345px;
+			}
+			
+			.footer{
+				width: 100%;
+				height: 600px;
+				background-color: #eaeaea;
+				position: relative;
+				
+			}
+	/*最下面内容的上部分样式*/
+			.footer-header{
+				width: 1190px;
+				height: 42px;
+				padding: 30px 0;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -595px;
+				border-bottom: 1px solid #ccc;
+			}
+			.footer-header li{
+				width: 225px;
+				height: 42px;
+				margin: 0 36px;
+				text-align: center;
+				position: relative;
+			}
+			.footer-header p{
+				width: 180px;
+				height: 42px;
+				display: inline-block;
+				margin-left: 45px;
+				line-height: 42px;
+				font-size: 18px;
+				font-weight: 800;
+			}
+			.footer-header .f-img{
+				width: 42px;
+				height: 42px;
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			.footer-header .duo{
+				background: url(../img/ico_service.png) 0px 0px;
+			}
+			.footer-header .kuai{
+				background: url(../img/ico_service.png) 0px 42px;
+			}
+			.footer-header .hao{
+				background: url(../img/ico_service.png) 0px 86px;
+			}
+			.footer-header .sheng{
+				background: url(../img/ico_service.png) 0px 129px;
+			}
+	/*最后帮助部分*/
+			.footer-main{
+				width: 1190px;
+				height: 180px;
+				padding: 20px 0;
+				border-bottom: 1px solid #ccc;
+				position: absolute;
+				top: 104px;
+				left: 50%;
+				margin-left: -595px;
+			}
+			.footer-table,.footer-table table{
+				width: 975px;
+				height: 162px;
+			}
+			.footer-table tr>th{
+				text-align: left;
+				color: #666;
+				font-size: 14px;
+			}
+			.footer-table a{
+				color:#727272;
+				font-size: 12px;
+			}
+			.footer-table a:hover{
+				color: red;
+			}
+			.footer-cover{
+				width: 207px;
+				height: 150px;
+				margin: 15px 0;
+				background: url(../img/ico_footer.png)0 0;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			.footer-cover .p-h{
+				width: 207px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				font-size: 14px;
+				font-weight: 800;
+				color: #666;
+				margin-bottom: 10px;
+			}
+			.footer-cover .p-m,a{
+				color: #727272;
+				font-size: 12px;
+			}
+			.footer-cover .p-m{
+				width: 175px;
+				height: 50px;
+				margin-top: 5px;
+				margin-left: 10px;
+				line-height: 18px;
+			}
+			.footer-cover a{
+				width: 207px;
+				display: inline-block;
+				text-align: right;
+			}
+			.footer-end{
+				width: 1190px;
+				height: 150px;
+				position: absolute;
+				top: 326px;
+				left: 50%;
+				margin-left: -595px;
+				padding-top: 15px;
+				text-align: center;
+				color: #747474;
+				font-size: 12px;
+			}
+			.footer-end span{
+				color: #727272;
+				font-size: 12px;
+				margin: 0 5px;
+			}
+			.end-text{
+				margin: 10px 0;
+			}
+			.end-text p{
+				color: #9D9D9D;
+				line-height: 20px;
+			}
+			.end-tips{
+				text-align: center;
+			}
+			.end-tips a{
+				width: 100px;
+				height: 30px;
+				display: inline-block;
+			}
+			.end-tips .tips1{
+				background: url(../img/ico_footer.png)-1px -153px;
+			}
+			.end-tips .tips2{
+				background: url(../img/ico_footer.png)-105px -153px;
+			}
+			.end-tips .tips3{
+				background: url(../img/ico_footer.png)-1px -185px;
+			}
+			.end-tips .tips4{
+				background: url(../img/ico_footer.png)-105px -185px;
+			}
+			.end-tips .tips5{
+				background: url(../img/ico_footer.png)-1px -218px;
+			}
+			.end-tips .tips6{
+				background: url(../img/ico_footer.png)-105px -218px;
+			}
+			
+			

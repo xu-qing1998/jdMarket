@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>企业采购</title>
+    <link rel="stylesheet" type="text/css" href="css/Purchase.css" />
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?ebtxn4');
+            src: url('fonts/icomoon.eot?ebtxn4#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?ebtxn4') format('truetype'), url('fonts/icomoon.woff?ebtxn4') format('woff'), url('fonts/icomoon.svg?ebtxn4#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+    </style>
+</head>
+<script src="js/jquery-1.8.2.js" type="text/javascript" charset="utf-8"></script>
+
+<body>
+
+    <!--头部-->
+    <div class="top">
+        <div class="box1">
+            <ul class="top_left">
+                <li>
+                    <a href="#" class="biao"></a>
+                    <a href="#" class="red">京东首页</a>
+                </li>
+                <li>
+                    <a href="#" class="biao"></a>
+                    <a href="#">江苏</a>
+                </li>
+            </ul>
+            <ul class="top_right">
+                <li><a href="#" class="red">你好，请登录</a></li>
+                <li><a href="#" class="red">免费注册</a></li>
+                <li><a href="#" class="red">我的订单</a></li>
+                <li class="myjds">
+                    <a href="#" class="minejd">我的京东</a>
+                    <img src="img/down-@1x.png" alt="">
+                    <div class="myjd">
+                        <div class="myjd_top">
+                            <ul class="myjd_top_left">
+                                <li><a href="#">待处理订单</a></li>
+                                <li><a href="#">返修退换货</a></li>
+                                <li><a href="#">降价商品</a></li>
+                            </ul>
+                            <ul class="myjd_top_right">
+                                <li><a href="#">消息</a></li>
+                                <li><a href="#">我的问答</a></li>
+                                <li><a href="#">我的关注</a></li>
+                            </ul>
+                        </div>
+                        <div class="myjd_bot">
+                            <ul class="myjd_bot_left">
+                                <li><a href="#">我的京豆</a></li>
+                                <li><a href="#">我的白条</a></li>
+                            </ul>
+                            <ul class="myjd_bot_right">
+                                <li><a href="#">我的优惠券</a></li>
+                                <li><a href="#">我的理财</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" class="red">京东会员</a></li>
+                <li class="qy">
+                    <a href="#" class="qiye">企业采购</a>
+                    <img src="img/down-@1x.png" alt="">
+                    <div class="qycg">
+                        <span><a href="#">企业购</a></span>
+                        <span><a href="#">商用场景馆</a></span>
+                        <span><a href="#">工业卡</a></span>
+                        <span><a href="#">礼品卡</a></span>
+                        <span><a href="#">丰富多商城</a></span>
+
+                    </div>
+                </li>
+                <li class="khfw">
+                    <a href="#" class="serve ">客户服务</a>
+                    <img src="img/down-@1x.png" alt="">
+                    <div class="khfwcont">
+                        <h4>客户</h4>
+                        <div class="khfw_top">
+                            <ul class="knfw_top_left">
+                                <li><a href="#">帮助中心</a></li>
+                                <li><a href="#">在线客服</a></li>
+                                <li><a href="#">电话客服</a></li>
+                                <li><a href="#">金融咨询</a></li>
+                                <li><a href="#">企业客服</a></li>
+                            </ul>
+                            <ul class="knfw_top_right">
+                                <li><a href="#">售后服务</a></li>
+                                <li><a href="#">意见建议</a></li>
+                                <li><a href="#">客服邮箱</a></li>
+                                <li><a href="#">全球售客服</a></li>
+                            </ul>
+                        </div>
+                        <h4>商户</h4>
+                        <div class="khfw_bot">
+                            <ul class="knfw_bot_left">
+                                <li><a href="#">合作招商</a></li>
+                                <li><a href="#">商家后台</a></li>
+                                <li><a href="#">商家帮助</a></li>
+                            </ul>
+                            <ul class="knfw_bot_right">
+                                <li><a href="#">成长中心</a></li>
+                                <li><a href="#">京麦工作台</a></li>
+                                <li><a href="#">规则平台</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="www">
+                    <a href="#">网站导航</a>
+                    <img src="img/down-@1x.png" alt="">
+
+                    <div class="wzdh">
+                        <div class="wzdh_first">
+                            <h5 class="te">特色主题</h5>
+                            <ul class="morethings met">
+                                <li>
+                                    <ul class="right right_one">
+                                        <li class="xin"><a href="#">新品首发</a></li>
+                                        <li class="jing"><a href="#">京东会员</a></li>
+                                        <li class="zhuang"><a href="#">装机大师</a></li>
+                                        <li class="miao"><a href="#">秒杀</a></li>
+                                        <li class="chu"><a href="#">出海招商</a></li>
+
+                                    </ul>
+
+                                </li>
+                                <li>
+                                    <ul class="right right_two">
+                                        <li class="xin"><a href="#">京东金融</a></li>
+                                        <li class="jing"><a href="#">京东预售</a></li>
+                                        <li class="zhuang"><a href="#">0元测评</a></li>
+                                        <li class="miao"><a href="#">闪购</a></li>
+                                        <li class="chu"><a href="#">拍拍二手</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="right right_three">
+                                        <li class="xin"><a href="#">全球售</a></li>
+                                        <li class="jing"><a href="#">台湾售</a></li>
+                                        <li class="zhuang"><a href="#">港澳售</a></li>
+                                        <li class="miao"><a href="#">印尼站</a></li>
+                                        <li class="chu"><a href="#">买什么</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="right right_f">
+                                        <li class="xin"><a href="#">国际站</a></li>
+                                        <li class="jing"><a href="#">俄语站</a></li>
+                                        <li class="zhuang"><a href="#">优惠券</a></li>
+                                        <li class="miao"><a href="#">陪伴计划</a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="wzdh_second">
+                            <h5 class="hang">行业频道</h5>
+                            <ul class="morethings x2">
+                                <li>
+                                    <ul class="right right_one">
+                                        <li class="xin"><a href="#">手机</a></li>
+                                        <li class="jing"><a href="#">电脑办公</a></li>
+                                        <li class="zhuang"><a href="#">京东服饰</a></li>
+                                        <li class="miao"><a href="#">母婴</a></li>
+                                        <li class="chu"><a href="#">整车</a></li>
+
+                                    </ul>
+
+                                </li>
+                                <li>
+                                    <ul class="right right_two">
+                                        <li class="xin"><a href="#">智能数码</a></li>
+                                        <li class="jing"><a href="#">家用电器</a></li>
+                                        <li class="zhuang"><a href="#">京东生鲜</a></li>
+                                        <li class="miao"><a href="#">食品</a></li>
+                                        <li class="chu"><a href="#">图书</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="right right_three">
+                                        <li class="xin"><a href="#">玩3C</a></li>
+                                        <li class="jing"><a href="#">家装城</a></li>
+                                        <li class="zhuang"><a href="#">农资频道</a></li>
+                                        <li class="miao"><a href="#">劳动防护</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="wzdh_third">
+                            <h5 class="sheng">生活服务</h5>
+                            <ul class="morethings x3">
+                                <li>
+                                    <ul class="right right_one">
+                                        <li class="xin"><a href="#">京东众筹</a></li>
+                                        <li class="jing"><a href="#">水电煤</a></li>
+                                        <li class="zhuang"><a href="#">机票酒店</a></li>
+                                        <li class="miao"><a href="#">游戏</a></li>
+
+                                    </ul>
+
+                                </li>
+                                <li>
+                                    <ul class="right right_two">
+                                        <li class="xin"><a href="#">白条</a></li>
+                                        <li class="jing"><a href="#">理财</a></li>
+                                        <li class="zhuang"><a href="#">彩票</a></li>
+                                        <li class="miao"><a href="#">电影票</a></li>
+                                        <li class="chu"><a href="#">拍拍回收</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="right right_three">
+                                        <li class="xin"><a href="#">京东金融</a></li>
+                                        <li class="jing"><a href="#">话费</a></li>
+                                        <li class="zhuang"><a href="#">旅行</a></li>
+                                        <li class="miao"><a href="#">京东到家</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="wzdh_fourth">
+                            <h5 class="geng">更多精选</h5>
+                            <ul class="morethings x4">
+                                <li>
+                                    <ul class="right right_one">
+                                        <li class="xin"><a href="#">合作招商</a></li>
+                                        <li class="jing"><a href="#">企业采购</a></li>
+                                        <li class="zhuang"><a href="#">校园加盟</a></li>
+                                        <li class="miao"><a href="#">知识产权</a></li>
+
+                                    </ul>
+
+                                </li>
+                                <li>
+                                    <ul class="right right_two">
+                                        <li class="xin"><a href="#">京东通信</a></li>
+                                        <li class="jing"><a href="#">服务市场</a></li>
+                                        <li class="zhuang"><a href="#">京东社区</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="right right_three">
+                                        <li class="xin"><a href="#">京东E卡</a></li>
+                                        <li class="jing"><a href="#">办公生活</a></li>
+                                        <li class="zhuang"><a href="#">游戏社区</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="red">手机京东</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--头部下面有搜索框的那部分-->
+    <div class="md">
+        <div class="middle">
+            <div class="logo"></div>
+            <div class="middle_dropDownList">
+                <select name="jdcs">
+						<option value="">京东超市频道</option>
+						<!-- <option value="">生鲜企业购</option>
+						<option value="">企业购</option>
+						<option value="">家电企业购</option> -->
+                    </select>
+                <table>
+                    <tr>
+                        <td>生鲜企业购</td>
+                    </tr>
+                    <tr>
+                        <td>企业购</td>
+                    </tr>
+                    <tr>
+                        <td>家电企业购</td>
+                    </tr>
+                </table>
+
+
+            </div>
+            <div class="search">
+                <input type="text" value="免洗洗手液" id="search1" />
+                <div class="text">搜索</div>
+            </div>
+            <ul class="small_text">
+                <li><a href="#">大豆油</a></li>
+                <li><a href="#">京东自营</a></li>
+                <li><a href="#">方便面</a></li>
+                <li><a href="#">三只松鼠</a></li>
+                <li><a href="#">白酒</a></li>
+            </ul>
+
+            <div class="shoping_cart">
+                <span class="text">我的购物车</span>
+                <a href="shopcares.html"><span class="carphoto"></span></a>
+                <span class="cicle">2</span>
+                <div class="eject">
+                    <span class="photo4"></span>
+                    <span class="tips">购物车中还没有商品，赶紧选购吧！</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--主体部分-->
+    <div class="main">
+        <div class="about_all">
+            <ul class="nav">
+                <li>企业购全部分类</li>
+                <li><a href="#">企业购首页</a></li>
+                <li><a href="#">限时特价</a></li>
+                <li><a href="#">京东E卡</a></li>
+                <li><a href="#">企业金采</a></li>
+                <li><a href="#">会员中心</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+            <div class="left">
+                <div class="first">
+                    <h4><a href="#">清洁生活</a></h4>
+                    <span><a href="#" class="texts">纸品湿巾</a></span>
+                    <span><a href="#" class="texts">衣物清洁</a></span>
+                    <span><a href="#" class="texts">宠物</a></span>
+                </div>
+                <div class="first">
+                    <h4><a href="#">食品饮料</a></h4>
+                    <span><a href="#" class="texts">休闲食品</a></span>
+                    <span><a href="#" class="texts">牛奶</a></span>
+                    <span><a href="#" class="texts">饮料</a></span>
+                </div>
+                <div class="first">
+                    <h4><a href="#">中外名酒</a></h4>
+                    <span><a href="#" class="texts">白酒</a></span>
+                    <span><a href="#" class="texts">红酒/起泡</a></span>
+                    <span><a href="#" class="texts">啤酒</a></span>
+                </div>
+                <div class="first">
+                    <h4><a href="#">粮油副食</a></h4>
+                    <span><a href="#" class="texts">食用油</a></span>
+                    <span><a href="#" class="texts">米面</a></span>
+                    <span><a href="#" class="texts">厨房调味</a></span>
+                </div>
+                <div class="first">
+                    <h4><a href="#">个人护理</a></h4>
+                    <span><a href="#" class="texts">洗发护发</a></span>
+                    <span><a href="#" class="texts">身体</a></span>
+                    <span><a href="#" class="texts">口腔</a></span>
+                    <span><a href="#" class="texts">女性</a></span>
+                </div>
+                <div class="first">
+                    <h4><a href="#">母婴用品</a></h4>
+                    <span><a href="#" class="texts">奶粉</a></span>
+                    <span><a href="#" class="texts">尿裤</a></span>
+                    <span><a href="#" class="texts">玩具</a></span>
+                </div>
+            </div>
+            <div class="center"></div>
+            <div class="right">
+                <div class="right_first">
+                    <div class="headPortrait"></div>
+                    <div class="blue">
+                        <div>欢迎来到消费品企业频道</div>
+                        <button class="button_left"><a href="#">企业登录</a></button>
+                        <button class="button_right"><a href="#">企业注册</a></button>
+                    </div>
+                </div>
+                <div class="right_second"><a href="#">企业特权</a></div>
+                <div class="right_third">
+                    <div class="exclusivePrivileges">
+                        <div class="photo1"></div>
+                        <div><a href="#" class="a">企业专属特权</a></div>
+                        <div><a href="#">注册/升级企业会员</a></div>
+                    </div>
+
+                    <div class="exclusivePrivileges">
+                        <div class="photo2"></div>
+                        <div><a href="#" class="a">自主开票</a></div>
+                        <div><a href="#">货票分离，自主开具</a></div>
+                    </div>
+
+                    <div class="exclusivePrivileges">
+                        <div class="photo3"></div>
+                        <div><a href="#" class="a">发布采购需求</a></div>
+                        <div><a href="#">全方位定制化服务</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="floor w">
+
+            <!--专享好物-->
+            <div class="exclusiveGoods w">
+                <div class="big_title">
+                    <div class="photo5"></div>
+                    <div>专享好物</div>
+                    <div>Enjoy good things</div>
+                    <div class="square1"></div>
+                    <div class="square2"></div>
+                    <div class="square3"></div>
+                    <div class="square4"></div>
+                </div>
+                <ul class="content">
+                    <li>
+                        <ul class="first">
+                            <li class="goodsPhoto goodsPhoto1"></li>
+                            <li class="recommend">暂无推荐语</li>
+                            <li class="introduce">
+                                <a href="#">
+                                    <p>丹麦进口 丹麦蓝罐(Kjeldsens)曲奇饼干 礼盒装 68...</p>
+                                </a>
+                            </li>
+                            <li class="price">￥123.00</li>
+                            <li><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul class="first">
+                            <li class="goodsPhoto goodsPhoto2"></li>
+                            <li class="recommend">暂无推荐语</li>
+                            <li class="introduce">
+                                <a href="#">
+                                    <p>三只松鼠手剥巴旦木 每日坚果干果炒货休闲零食扁核...</p>
+                                </a>
+                            </li>
+                            <li class="price">￥27.90</li>
+                            <li><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul class="first">
+                            <li class="goodsPhoto goodsPhoto3"></li>
+                            <li class="recommend">暂无推荐语</li>
+                            <li class="introduce">
+                                <a href="#">
+                                    <p>三只松鼠手剥东北开口松子坚果炒货零食特产每日坚...</p>
+                                </a>
+                            </li>
+                            <li class="price">￥42.90</li>
+                            <li><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="first">
+                            <li class="goodsPhoto goodsPhoto4"></li>
+                            <li class="recommend">暂无推荐语</li>
+                            <li class="introduce">
+                                <a href="#">
+                                    <p>厨邦 酱油 金品生抽 特级酿造 180天 炒菜调味品 820...</p>
+                                </a>
+                            </li>
+                            <li class="price">￥123.00</li>
+                            <li><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="first">
+                            <li class="goodsPhoto goodsPhoto5"></li>
+                            <li class="recommend">暂无推荐语</li>
+                            <li class="introduce">
+                                <a href="#">
+                                    <p>福临门 丝苗米 籼米 中粮出品 大米 5kg</p>
+                                </a>
+                            </li>
+                            <li class="price">￥45.00</li>
+                            <li><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!--京选好店-->
+            <div class="shop w">
+                <div class="title">京选好店</div>
+                <div class="stores">
+                    <div class="storesLogo">
+                        <div>
+                            <a href="#" class="blueMoon"></a>
+                        </div>
+                        <div>
+                            <a href="#" class="coolBreeze"></a>
+                        </div>
+                    </div>
+                    <ul class="storesName">
+                        <li>
+                            <a href="#"><img src="img/bf91095fe49ff288.jpg" alt="" width="80" height="40" /></a>
+                            <div class="TransparentLayer">舒肤佳</div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/5ae1371fN838745ec.jpg" alt="" /></a>
+                            <div class="TransparentLayer">帮宝适</div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/5ae1329eN635dfe95.jpg" alt="" /></a>
+                            <div class="TransparentLayer">五芳斋</div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/7d9d5e5978dc3e16.jpg" alt="" /></a>
+                            <div class="TransparentLayer">滴露</div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/5ae135ceN56749ca8.jpg" alt="" /></a>
+                            <div class="TransparentLayer">来伊份</div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/5ae1354fNce8c26e8.jpg" alt="" /></a>
+                            <div class="TransparentLayer">俏香阁</div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/5ae13592N55d3cb77.jpg" alt="" /></a>
+                            <div class="TransparentLayer">猫诚</div>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/5ae136c2N22d4682d.jpg" alt="" /></a>
+                            <div class="TransparentLayer">山姆</div>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+
+            <!--场景解决方案-->
+            <div class="programme w">
+                <div class="title">场景解决方案</div>
+                <div class="scene">
+                    <ul class="scene_1">
+                        <li class="scene_photo1 current">
+                            <ul class="photo1_content">
+                                <li class="slogan">
+                                    <div>商用清洁，职场安全</div>
+                                    <button>立享企业价</button>
+                                    <div class="colors green"></div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="scene_photo2">
+                            <ul class="photo1_content">
+                                <li class="slogan">
+                                    <div>爆款零食</div>
+                                    <button>立享企业价</button>
+                                    <div class="colors blue">网红爆款</div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="scene_photo3">
+
+                            <ul class="photo1_content">
+                                <li class="slogan">
+                                    <div>洗护专场</div>
+                                    <button>立享企业价</button>
+                                    <div class="colors green"></div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="scene_photo4">
+                            <ul class="photo1_content">
+                                <li class="slogan">
+                                    <div>茶歇休息</div>
+                                    <button>立享企业价</button>
+                                    <div class="colors yellow">办公休闲</div>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="scene_photo5">
+                            <ul class="photo1_content">
+                                <li class="slogan">
+                                    <div>中外酒水</div>
+                                    <button>立享企业价</button>
+                                    <div class="colors green"></div>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="TransparentLayer2"></div>
+                </div>
+            </div>
+
+
+            <!--粉色间隔部分-->
+            <div class="divider">
+                <ul class="divider_content">
+                    <li>
+                        <div class="divider_left">
+                            <div class="goodsName">金龙鱼食用油</div>
+                            <div class="watchWord">爆款直降</div>
+                            <button class="discount">立享企业价</button>
+                        </div>
+                        <div class="divider_right jinlongyu"></div>
+                    </li>
+
+                    <li class="center1">
+                        <div class="divider_left ">
+                            <div class="goodsName" id="october">十月稻田</div>
+                            <div class="watchWord">爆款直降</div>
+                            <button class="discount">立享企业价</button>
+                        </div>
+                        <div class="divider_right daohuaxiang"></div>
+                    </li>
+
+                    <li>
+                        <div class="divider_left">
+                            <div class="goodsName">蓝月亮 洗衣液</div>
+                            <div class="watchWord">第二件半价</div>
+                            <button class="discount">立享企业价</button>
+                        </div>
+                        <div class="divider_right lanyueliang"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <!--休闲零食-->
+            <div class="leisureSnacks snacks w">
+                <div class="ls_top">
+                    <div class="top_left snacksBac">
+                        <ul class="classification">
+                            <li class="yellow"><a href="#">坚果零食</a></li>
+                            <li class="yellow"><a href="#">休闲零食</a></li>
+                            <li class="yellow"><a href="#">肉干肉脯</a></li>
+                            <li class="yellow"><a href="#">饼干蛋糕</a></li>
+                            <li class="yellow"><a href="#">巧克力</a></li>
+                            <li class="yellow"><a href="#">蜜饯果干</a></li>
+                        </ul>
+                    </div>
+                    <div class="top_mid snacks_mid"></div>
+                    <div class="top_right snacks_right"></div>
+                </div>
+                <div class="ls_mid">
+                    <ul class="commodityInformation">
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture1"></li>
+                                <li class="more"><a href="#">三只松鼠乳酸菌小伴侣面包营养早餐代餐口袋手撕面...</a></li>
+                                <li class="commodity_price">￥27.90</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture2"></li>
+                                <li class="more"><a href="#">三只松鼠手撕面包 饼干蛋糕千层零食大礼包酵母面包...</a></li>
+                                <li class="commodity_price">￥26.90</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture3"></li>
+                                <li class="more"><a href="#">港荣蒸蛋糕 奶香味900g/箱饼干蛋糕 yingyag早餐食品 手...</a></li>
+                                <li class="commodity_price">￥37.80</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture4"></li>
+                                <li class="more"><a href="#">奥利奥(Oreo)原味夹心饼干 早餐蛋糕糕点办公室下...</a></li>
+                                <li class="commodity_price">￥12.90</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture5"></li>
+                                <li class="more"><a href="#"> 葡记 长崎蛋糕蜂蜜味1000g整箱礼盒 营养早餐 口袋手...</a></li>
+                                <li class="commodity_price">￥32.80</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture6"></li>
+                                <li class="more"><a href="#">百草味 易烊千玺同款坚果礼盒零食礼包30袋 腰果核...</a></li>
+                                <li class="commodity_price">￥139.00</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <ul class="ls_foot">
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae18c76N571bd5a4.jpg" alt="" title="良品铺子"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae18cc9Ne2a5ca4b.jpg" alt="" title="俏香阁"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae18d01Naf21d064.jpg" alt="" title="五芳斋"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae18d15N9dea54f1.jpg" alt="" title="来伊份"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae18d37Ne83504f3.png" alt="" title="悠享家"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae18dfbN0289cb58.jpg" alt="" title="甘源"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae18e1eN18de2f47.jpg" width="69" height="50" alt="" title="黄飞鸿"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/389594bca7fd5d91.jpg" alt="" title="奥利奥"></a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <!-- 粮油副食 -->
+            <div class="leisureSnacks cerealsAndOils w">
+                <div class="ls_top">
+                    <div class="top_left cerealsAndOilsBac">
+                        <ul class="classification">
+                            <li class="lightgreen"><a href="#">大米</a></li>
+                            <li class="lightgreen"><a href="#">食用油</a></li>
+                            <li class="lightgreen"><a href="#">调料</a></li>
+                            <li class="lightgreen"><a href="#">干货</a></li>
+                            <li class="lightgreen"><a href="#">烘焙原料</a></li>
+                            <li class="lightgreen"><a href="#">杂粮</a></li>
+                            <li class="lightgreen"><a href="#">方便速食</a></li>
+                        </ul>
+                    </div>
+                    <div class="top_mid cerealsAndOils_mid"></div>
+                    <div class="top_right cerealsAndOils_right"></div>
+                </div>
+                <div class="ls_mid">
+                    <ul class="commodityInformation">
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture7"></li>
+                                <li class="more"><a href="#">多力葵花籽油5L+250ml 食用油 含维生素e...</a></li>
+                                <li class="commodity_price">￥72.90</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture8"></li>
+                                <li class="more"><a href="#">十月稻田 五常稻花香 东北大米10kg...</a></li>
+                                <li class="commodity_price">￥118.00</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture9"></li>
+                                <li class="more"><a href="#">2020年新米 十月稻田 长粒香大米 东北大米 东北香米 10kg...</a></li>
+                                <li class="commodity_price">￥67.90</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture10"></li>
+                                <li class="more"><a href="#">鲁花 食用油 低芥酸特香菜籽油 6.18L（京东定制装...</a></li>
+                                <li class="commodity_price">￥99.80</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture11"></li>
+                                <li class="more"><a href="#">福临门 泰玉香 一品茉莉香米 大米 中粮出...</a></li>
+                                <li class="commodity_price">￥25.90</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture12"></li>
+                                <li class="more"><a href="#">金龙鱼 东北大米 蟹稻共生 盘锦大米5KG...</a></li>
+                                <li class="commodity_price">￥29.50</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <ul class="ls_foot">
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae1b332Ndc229219.jpg" alt="" title="惠氏"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae1b345N3c2b45b8.jpg" alt="" title="乐高"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae1b361Nfccda857.jpg" alt="" title="诺优能"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae1b36aN0b67bddd.jpg" alt="" title="强生"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae1b391N7ff11c0b.jpg" alt="" title="雅培"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae1b3afN7135d471.png" width="50" height="50" title="沃隆"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae1b3d2N31215cf8.png" width="69" height="50" alt="" title="元和斋"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae1b40aN18ac9a6e.png" alt="" title="金鱼"></a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+            <!--中外名酒-->
+            <div class="leisureSnacks alcohol w">
+                <div class="ls_top">
+                    <div class="top_left alcoholBac">
+                        <ul class="classification">
+                            <li class="blue"><a href="#">大米</a></li>
+                            <li class="blue"><a href="#">食用油</a></li>
+                            <li class="blue"><a href="#">调料</a></li>
+                            <li class="blue"><a href="#">干货</a></li>
+                            <li class="blue"><a href="#">烘焙原料</a></li>
+                            <li class="blue"><a href="#">杂粮</a></li>
+                            <li class="blue"><a href="#">方便速食</a></li>
+                        </ul>
+                    </div>
+                    <div class="top_mid alcohol_mid"></div>
+                    <div class="top_right alcohol_right"></div>
+                </div>
+                <div class="ls_mid">
+                    <ul class="commodityInformation">
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture13"></li>
+                                <li class="more"><a href="#">洋河蓝色经典 海之蓝 42度 礼盒装 480ml*2瓶白酒 口...</a></li>
+                                <li class="commodity_price">￥279.00</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture14"></li>
+                                <li class="more"><a href="#">汾酒 白酒 黄盖玻汾 清香型 高度白酒 53度 475ml*6...</a></li>
+                                <li class="commodity_price">￥278.00</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture15"></li>
+                                <li class="more"><a href="#">牛栏山 白酒 浓香型 牛角尖 43度 500ml*6瓶 整箱装...</a></li>
+                                <li class="commodity_price">￥279.00</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture16"></li>
+                                <li class="more"><a href="#">泸州老窖 蓝花瓷 头曲 52度 浓香型 白酒 双瓶礼盒升级...</a></li>
+                                <li class="commodity_price">￥136.00</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture17"></li>
+                                <li class="more"><a href="#"> 泸州老窖 老窖醇香 宏道 白酒 52度 500ml*6瓶 整箱...</a></li>
+                                <li class="commodity_price">￥123.00</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture18"></li>
+                                <li class="more"><a href="#">余华作品：战栗（新版）</a></li>
+                                <li class="commodity_price">￥22.50</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <ul class="ls_foot">
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae19000Nb4ab83e2.jpg" alt="" title="百花"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae192afN9def60f2.jpg" alt="" title="北大荒"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae192d3N38764b93.jpg" alt="" title="冠生园"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae194d8N82390bc6.jpg" alt="" title="维维"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae19572N52ff859a.png" alt="" title="悦活"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae195a1N233b68cf.jpg" title="沃尔玛"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae1965eN2a6a7690.jpg" alt="" title="稻香村"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae196a4N2fac285b.png" alt="" width="69" height="50" title="元和斋"></a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+            <!-- 个护清洁 -->
+            <div class="leisureSnacks clean w">
+                <div class="ls_top">
+                    <div class="top_left cleanBac">
+                        <ul class="classification">
+                            <li class="purple"><a href="#">洗发</a></li>
+                            <li class="purple"><a href="#">护发</a></li>
+                            <li class="purple"><a href="#">沐浴</a></li>
+                            <li class="purple"><a href="#">牙膏/牙粉</a></li>
+                            <li class="purple"><a href="#">卫生巾</a></li>
+                        </ul>
+                    </div>
+                    <div class="top_mid clean_mid"></div>
+                    <div class="top_right clean_right"></div>
+                </div>
+                <div class="ls_mid">
+                    <ul class="commodityInformation">
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture19"></li>
+                                <li class="more"><a href="#">尘埃落定（纪念版）</a></li>
+                                <li class="commodity_price">￥暂无报价</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture20"></li>
+                                <li class="more"><a href="#">云南白药 牙膏 180g （留兰香型）新老包装随机发货...</a></li>
+                                <li class="commodity_price">￥28.30</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture21"></li>
+                                <li class="more"><a href="#">蓝月亮 芦荟抑菌洗手液套装:洗手液瓶500g*3+瓶装...</a></li>
+                                <li class="commodity_price">￥51.80</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture22"></li>
+                                <li class="more"><a href="#">欧舒丹 明星手霜套装4支装(乳木果30ml+玫瑰30ml...</a></li>
+                                <li class="commodity_price">￥360.00</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture23"></li>
+                                <li class="more"><a href="#">凡士林(Vaseline)润手霜 特润 修护清香50ml（护手...</a></li>
+                                <li class="commodity_price">￥25.90</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <ul class="thefirst_u">
+                                <li class="inf_photo picture24"></li>
+                                <li class="more"><a href="#">余华作品：战栗（新版）</a></li>
+                                <li class="commodity_price">￥22.50</li>
+                                <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <ul class="ls_foot">
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae1987cN394f8532.png" alt="" title="纸护士"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae19899N2b3afc85.png" alt="" title="幸福"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae1999cN97de7f7d.png" alt="" title="相印"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae199f9N2b9c5b86.png" alt="" title="五月花"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae19a20N8c63ecf7.png" alt="" title="维尔美"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae19a91N83460aab.png" width="50" height="50" title="泉林本色"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae19ac7Nea369301.png" width="69" height="50" alt="" title="清风"></a>
+                    </li>
+                    <li class="ls_foot_1">
+                        <a href="#"><img src="img/5ae19aedN10e22f7d.png" alt="" title="蓝月亮"></a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <!--母婴美妆 宠物园艺 -->
+            <div class="bigs w">
+                <!-- 美妆 -->
+                <div class="makeUp">
+                    <div class="makeUp_top">
+                        <div class="makeUP_top_left makeUp_left">
+                            <ul class="classification">
+                                <li class="pink"><a href="#">面部护肤</a></li>
+                                <li class="pink"><a href="#">香水彩妆</a></li>
+                                <li class="pink"><a href="#">男士护肤</a></li>
+                                <li class="pink"><a href="#">美妆馆</a></li>
+                                <li class="pink"><a href="#">奶粉</a></li>
+                                <li class="pink"><a href="#">尿裤湿巾</a></li>
+                                <li class="pink"><a href="#">孕产寝居</a></li>
+                            </ul>
+                        </div>
+                        <div class="makeUp_top_right makeUp_right"></div>
+                    </div>
+
+                    <div class="makeUp_mid">
+                        <ul class="makeUp_commodityInformation">
+                            <li class="makeUp_commodityInformation_left">
+                                <ul class="thefirst_u">
+                                    <li class="inf_photo picture25"></li>
+                                    <li class="more"><a href="#">余华作品：战栗（新版）</a></li>
+                                    <li class="commodity_price">￥22.50</li>
+                                    <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                                </ul>
+                            </li>
+
+                            <li class="makeUp_commodityInformation_center">
+                                <ul class="thefirst_u">
+                                    <li class="inf_photo picture26"></li>
+                                    <li class="more"><a href="#">余华作品：战栗（新版）</a></li>
+                                    <li class="commodity_price">￥22.50</li>
+                                    <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                                </ul>
+                            </li>
+
+                            <li class="makeUp_commodityInformation_right">
+                                <ul class="thefirst_u">
+                                    <li class="inf_photo picture27"></li>
+                                    <li class="more"><a href="#">余华作品：战栗（新版）</a></li>
+                                    <li class="commodity_price">￥22.50</li>
+                                    <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <ul class="makeUp_foot">
+                        <li class="makeUp_foot_1">
+                            <a href="#"><img src="img/5ae1b2dbNd63cd0c0.jpg" alt="" title="帮宝适"></a>
+                        </li>
+
+                        <li class="makeUp_foot_1">
+                            <a href="#"><img src="img/5ae1b2c8Nf471516b.jpg" alt="" title="奥迪"></a>
+                        </li>
+
+                        <li class="makeUp_foot_1">
+                            <a href="#"><img src="img/5ae1b2f3N14dec51c.jpg" alt="" title="好奇"></a>
+                        </li>
+
+                        <li class="makeUp_foot_1">
+                            <a href="#"><img src="img/5ae1b303N5c5657cd.jpg" alt="" title="美赞成"></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+
+                <!-- 宠物园艺 -->
+                <div class="pet">
+
+                    <div class="makeUp_top">
+                        <div class="makeUP_top_left pet_left">
+                            <ul class="classification">
+                                <li class="gre"><a href="#">面部护肤</a></li>
+                                <li class="gre"><a href="#">香水彩妆</a></li>
+                                <li class="gre"><a href="#">男士护肤</a></li>
+                                <li class="gre"><a href="#">美妆馆</a></li>
+                                <li class="gre"><a href="#">奶粉</a></li>
+                                <li class="gre"><a href="#">尿裤湿巾</a></li>
+                                <li class="gre"><a href="#">孕产寝居</a></li>
+                            </ul>
+                        </div>
+                        <div class="makeUp_top_right pet_right"></div>
+                    </div>
+
+                    <div class="makeUp_mid">
+                        <ul class="makeUp_commodityInformation">
+                            <li class="makeUp_commodityInformation_left">
+                                <ul class="thefirst_u">
+                                    <li class="inf_photo picture28"></li>
+                                    <li class="more"><a href="#">余华作品：战栗（新版）</a></li>
+                                    <li class="commodity_price">￥22.50</li>
+                                    <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                                </ul>
+                            </li>
+
+                            <li class="makeUp_commodityInformation_center">
+                                <ul class="thefirst_u">
+                                    <li class="inf_photo picture29"></li>
+                                    <li class="more"><a href="#">余华作品：战栗（新版）</a></li>
+                                    <li class="commodity_price">￥22.50</li>
+                                    <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                                </ul>
+                            </li>
+
+                            <li class="makeUp_commodityInformation_right">
+                                <ul class="thefirst_u">
+                                    <li class="inf_photo picture30"></li>
+                                    <li class="more"><a href="#">余华作品：战栗（新版）</a></li>
+                                    <li class="commodity_price">￥22.50</li>
+                                    <li class="login_looks"><input type="button" name="btn" id="btn" value="登录查看更低企业价" /></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <ul class="makeUp_foot">
+                        <li class="makeUp_foot_1">
+                            <a href="#"><img src="img/5ae1b210N51970693.jpg" alt="" title="LANPO"></a>
+                        </li>
+
+                        <li class="makeUp_foot_1">
+                            <a href="#"><img src="img/5ae1b22fNa0b5ab02.png" alt="" title="TOM"></a>
+                        </li>
+
+                        <li class="makeUp_foot_1">
+                            <a href="#"><img src="img/5ae1b23bN210040d3.jpg" alt="" title="德信"></a>
+                        </li>
+
+                        <li class="makeUp_foot_1">
+                            <a href="#"><img src="img/5ae1b24bN7204f4bf.jpg" alt="" title="红豆"></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 固定电梯导航 -->
+    <div class="fixedtool">
+        <ul>
+            <li class="current">专享好物</li>
+            <li>京选好店</li>
+            <li>场景解决方案</li>
+            <li>食品饮料</li>
+            <li>粮油副食</li>
+            <li>中外名酒</li>
+            <li>个护清洁</li>
+            <li>母婴/宠物</li>
+
+
+        </ul>
+    </div>
+
+
+    <!-- 尾部 -->
+    <div class="foot">
+        <div class="service">
+            <div class="service-head">
+                <ul class="service-head-list">
+                    <li class="service-head-item"><span class="service-head-item-pic1"></span>
+                        <p>品类齐全，轻松购物</p>
+                    </li>
+                    <li class="service-head-item"><span class="service-head-item-pic2"></span>
+                        <p>多仓直发，极速配送</p>
+                    </li>
+                    <li class="service-head-item"><span class="service-head-item-pic3"></span>
+                        <p>正品行货，精致服务</p>
+                    </li>
+                    <li class="service-head-item"><span class="service-head-item-pic4"></span>
+                        <p>天天低价，畅选无忧</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="service-inner">
+                <div class="wrap">
+                    <dl class="wrap-1">
+                        <dt>购物指南</dt>
+                        <dd><a href="#">购物流程</a></dd>
+                        <dd><a href="#">会员介绍</a></dd>
+                        <dd><a href="#">生活旅行/团购</a></dd>
+                        <dd><a href="#">常见问题</a></dd>
+                        <dd><a href="#">大家电</a></dd>
+                        <dd><a href="#">练习客服</a></dd>
+                    </dl>
+                    <dl class="wrap-2">
+                        <dt>配送方式</dt>
+                        <dd><a href="#">上门自提</a></dd>
+                        <dd><a href="#">211限时达</a></dd>
+                        <dd><a href="#">配送服务查询</a></dd>
+                        <dd><a href="#">配送费收取标准</a></dd>
+                        <dd><a href="#">海外配送</a></dd>
+                    </dl>
+                    <dl class="wrap-3">
+                        <dt>支付方式</dt>
+                        <dd><a href="#">货到付款</a></dd>
+                        <dd><a href="#">在线支付</a></dd>
+                        <dd><a href="#">分期付款</a></dd>
+                        <dd><a href="#">公司转账</a></dd>
+                    </dl>
+                    <dl class="wrap-4">
+                        <dt>售后服务</dt>
+                        <dd><a href="#">售后政策</a></dd>
+                        <dd><a href="#">价格保护</a></dd>
+                        <dd><a href="#">退款说明</a></dd>
+                        <dd><a href="#">返修/退换货</a></dd>
+                        <dd><a href="#">取消订单</a></dd>
+                    </dl>
+                    <dl class="wrap-5">
+                        <dt>特色服务</dt>
+                        <dd><a href="#">夺宝岛</a></dd>
+                        <dd><a href="#">DIY装机</a></dd>
+                        <dd><a href="#">延保服务</a></dd>
+                        <dd><a href="#">京东E卡</a></dd>
+                        <dd><a href="#">京东通信</a></dd>
+                        <dd><a href="#">京鱼座智能</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+            <div class="footer-link">
+                <a href="#">关于我们</a>
+                <span id="">|</span>
+                <a href="#">联系我们</a>
+                <span id="">|</span>
+                <a href="#">联系客服</a>
+                <span id="">|</span>
+                <a href="#">合作招商</a>
+                <span id="">|</span>
+                <a href="#">商家帮助</a>
+                <span id="">|</span>
+                <a href="#">营销中心</a>
+                <span id="">|</span>
+                <a href="#">手机京东</a>
+                <span id="">|</span>
+                <a href="#">友情链接</a>
+                <span id="">|</span>
+                <a href="#">销售联盟</a>
+                <span id="">|</span>
+                <a href="#">京东社区</a>
+                <span id="">|</span>
+                <a href="#">风险监测</a>
+                <span id="">|</span>
+                <a href="#">隐私政策</a>
+                <span id="">|</span>
+                <a href="#">京东公益</a>
+                <span id="">|</span>
+                <a href="#">Enlish Site</a>
+                <span id="">|</span>
+                <a href="#">Madia & IR</a>
+            </div>
+            <div class="footer-info w">
+                <p><a href="#">京公网安备 11000002000088号</a><span>|</span><a href="#">京ICP证070359号</a><span>|</span><a href="#">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a><span>|</span><a href="#">新出发京零 字第大120007号</a></p>
+                <p><a href="#">互联网出版许可证编号新出网证(京)字150号</a><span>|</span><a href="#">出版物经营许可证</a><span>|</span><a href="#">网络文化经营许可证京网文[2014]2148-348号</a><span>|</span><a href="#">违法和不良信息举报电话：4006561155</a></p>
+                <p><a href="#">Copyright ? 2004 - 2017 京东JD.com 版权所有</a><span>|</span><a href="#">消费者维权热线：4006067733经营证照</a></p>
+                <p class="footer-info-p">
+                    <a href="#">
+                        <span class="footer-info-flag"></span><a>Global Site</a>
+                    </a>
+                    <span>|</span>
+                    <a href="#">
+                        <span class="footer-info-flag"></span><a>Сайт России</a>
+                    </a>
+                    <span>|</span>
+                    <a href="#">
+                        <span class="footer-info-flag"></span><a>Situs Indonesia</a>
+                    </a>
+                    <span>|</span>
+                    <a href="#">
+                        <span class="footer-info-flag"></span><a>Sitio de España</a>
+                    </a>
+                    <span>|</span>
+                    <a href="#">
+                        <span class="footer-info-flag"></span><a>เว็บไซต์ประเทศไทย</a>
+                    </a>
+                </p>
+                <p><a href="#">京东旗下网站：京东支付</a><span>|</span><a href="#">京东云</a></p>
+            </div>
+            <p class="footer-auth">
+                <a href="#" class="tips2"></a>
+                <a href="#" class="tips3"></a>
+                <a href="#" class="tips4"></a>
+                <a href="#" class="tips5"></a>
+                <a href="#" class="tips6"></a>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+
+
+<!--js-->
+<script type="text/javascript">
+    $(function() {
+
+        $(".product_sort .bd .item").hover(function() {
+            $(this).addClass("layer");
+        }, function() {
+            $(this).removeClass("layer");
+        });
+
+        $("#search1").focus(function() {
+
+            $(this).attr("value", "");
+        }).blur(function() {
+
+            $(this).attr("value", "免洗洗手液");
+        })
+
+
+
+        $(".scene_1>li").mouseenter(function() {
+
+            $(this).siblings().stop().animate({
+                width: 190
+            }, 500)
+            $(this).animate({
+                width: 360
+            }, 500);
+
+        })
+
+        $(".texts").mouseenter(function() {
+            $(this).css("color", "#4D7AF1");
+        })
+
+        $(".texts").mouseleave(function() {
+            $(this).css("color", "#444444");
+        })
+
+
+        $(".middle_dropDownList select").mouseenter(function() {
+            $(this).siblings("table").show();
+        })
+
+        $(".middle_dropDownList select").mouseleave(function() {
+            $(this).siblings("table").hide();
+        })
+
+
+        $(".minejd").mouseenter(function() {
+            $(this).parents("li").css("backgroundColor", "white");
+            $(this).css("color", "red");
+            $(this).siblings(".myjd").show();
+        })
+        $(".myjds").mouseleave(function() {
+            $(this).css("backgroundColor", "#E3E4E5");
+            $(this).children(".minejd").css("color", "#999999");
+            $(this).children(".myjd").hide();
+        })
+
+        $(".myjd a").mouseenter(function() {
+            $(this).css("color", "red");
+        })
+
+        $(".myjd a").mouseleave(function() {
+            $(this).css("color", "#999999");
+        })
+
+        $(".qy").mouseenter(function() {
+            $(this).css("backgroundColor", "#ffffff");
+            $(this).children(".qycg").show();
+            $(this).children("a").css("color", "red");
+
+        })
+
+        $(".qy").mouseleave(function() {
+            $(this).css("backgroundColor", "#E3E4E5");
+            $(this).children("a").css("color", "#999999");
+            $(this).children(".qycg").hide();
+        })
+
+        $(".qycg a").mouseenter(function() {
+            $(this).css("color", "red");
+        })
+
+        $(".qycg a").mouseleave(function() {
+            $(this).css("color", "#999999");
+        })
+
+        $(".khfw").mouseenter(function() {
+            $(this).css("backgroundColor", "white");
+            $(this).children("a").css("color", "red");
+            $(this).children(".khfwcont").show();
+        })
+        $(".khfw").mouseleave(function() {
+            $(this).css("backgroundColor", "#E3E4E5");
+            $(this).children("a").css("color", "#999999");
+            $(this).children(".khfwcont").hide();
+        })
+
+        $(".khfwcont a").mouseenter(function() {
+            $(this).css("color", "red");
+        })
+
+        $(".khfwcont a").mouseleave(function() {
+            $(this).css("color", "#999999");
+        })
+
+        $(".www").mouseenter(function() {
+            $(this).css("backgroundColor", "white");
+            $(this).children("a").css("color", "red");
+            $(this).children(".wzdh").show();
+
+        })
+        $(".www").mouseleave(function() {
+            $(this).css("backgroundColor", "#E3E4E5");
+            $(this).children("a").css("color", "#999999");
+            $(this).children(".wzdh").hide();
+        })
+
+        $(".wzdh a").mouseenter(function() {
+            $(this).css("color", "red");
+        })
+
+        $(".wzdh a").mouseleave(function() {
+            $(this).css("color", "#999999");
+        })
+
+        var flag = true;
+        // 1.显示隐藏电梯导航
+        var toolTop = $(".recommend").offset().top;
+        toggleTool();
+
+        function toggleTool() {
+            if ($(document).scrollTop() >= toolTop) {
+                $(".fixedtool").fadeIn();
+            } else {
+                $(".fixedtool").fadeOut();
+            };
+        }
+
+        $(window).scroll(function() {
+            toggleTool();
+            // 3. 页面滚动到某个内容区域，左侧电梯导航小li相应添加和删除current类名
+
+
+            if (flag) {
+                $(".floor .w").each(function(i, ele) {
+                    if ($(document).scrollTop() >= $(ele).offset().top) {
+                        console.log(i);
+                        $(".fixedtool li").eq(i).addClass("current").siblings().removeClass();
+
+                    }
+                })
+            }
+
+
+
+        });
+        // 2. 点击电梯导航页面可以滚动到相应内容区域
+        $(".fixedtool li").click(function() {
+            flag = false;
+            console.log($(this).index());
+            // 当我们每次点击小li 就需要计算出页面要去往的位置 
+            // 选出对应索引号的内容区的盒子 计算它的.offset().top
+            var current = $(".floor .w").eq($(this).index()).offset().top;
+            // 页面动画滚动效果
+            $("body, html").stop().animate({
+                scrollTop: current
+            }, function() {
+                flag = true;
+            });
+            // 点击之后，让当前的小li 添加current 类名 ，姐妹移除current类名
+            $(this).addClass("current").siblings().removeClass();
+        })
+
+        $(".red").mouseenter(function() {
+            $(this).css("color", "red");
+        })
+
+        $(".red").mouseleave(function() {
+            $(this).css("color", "#999999");
+        })
+
+    })
+</script>
+
+</html>

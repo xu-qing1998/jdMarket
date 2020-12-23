@@ -1,0 +1,75 @@
+.image-lunbo{
+	/* 给定容器宽高度 */
+	width: 100px;
+	overflow: hidden;
+	height: 100px;
+	position: relative;
+	/*margin: 20px auto;*/
+}
+
+ .image-lunbo img {
+	height: 100px;
+	width: 100px;
+}
+
+.points {
+    position: absolute;
+    z-index: 5;
+    list-style: none;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: hsla(0,0%,0%,0.2);*/
+    bottom: 5px;
+    left: 40%;
+    height: 20px;
+    border-radius: 25px;
+    right: 40%;
+}
+
+.points li {
+	cursor: pointer;
+	/*display: inline-block;*/
+	width: 0px;
+	height: 0px;
+	margin: 0px auto;
+	border-radius: 15px;
+	/*background-color: cadetblue;*/
+}
+
+.active {
+    background-color: hsla(0,0%,100%,1.00) !important;
+}
+
+.prev {
+
+	border-radius: 0 30px 30px 0;
+}
+
+.next,
+.prev {
+    appearance: menu;
+    margin: 0 auto;
+    width: 0px;
+    display: block;
+    float: left;
+    height: 0px;
+    position: absolute;
+	line-height: 40px;
+	text-align: center;
+	font-family: "宋体";
+	color: aliceblue;
+    z-index: 999;
+    background-color: hsla(0,0%,0%,0.1);
+    top: 45%;
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.next {
+	right: 0px;
+	border-radius: 30px 0 0 30px;
+}
+.prev:hover{background-color: hsla(0,0%,0%,0.5);}
+.next:hover{background-color: hsla(0,0%,0%,0.5);}

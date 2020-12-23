@@ -1,0 +1,487 @@
+ .cdb_add_icon, .cdi_add_icon, .goods_add_icon {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(//static.360buyimg.com/mtd/pc/supermarket_v3/3.0.1/v3/images/sprite_chaoshi_index@1x.png);
+    background-position: -21px -52px;
+    -moz-background-size: 118px 73px;
+    background-size: 118px 73px;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+}
+
+ol{
+	list-style: none;
+}
+
+dt {
+    display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+ 
+ /*<!--------奶制品部分--------------------->*/
+ .chaoshi_category {
+    height: 540px;
+    margin-top: 20px;
+    padding-top: 20px;
+    /*background-color: mediumpurple;*/
+    position: relative;
+}
+
+.chaoshi_category_bd {
+    height: 485px;
+    overflow: hidden;
+}
+
+.chaoshi_category_focus {
+    position: relative;
+    width: 190px;
+    float: left;
+}
+
+.chaoshi_category_focus_pic {
+    display: block;
+}
+.chaoshi_category_focus_key {
+    position: absolute;
+    bottom: 0;
+    height: 133px;
+    padding: 20px 10px 12px;
+    background: rgba(0,0,0,.2);
+}
+
+.chaoshi_category_focus_key_inner {
+    height: 133px;
+    overflow: hidden;
+}
+
+.chaoshi_category_focus_key a {
+    float: left;
+    width: 73px;
+    height: 24px;
+    margin: 0 5px 8px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    border: 1px solid hsla(0,0%,100%,.6);
+    background: hsla(0,0%,95%,.2);
+    overflow: hidden;
+}
+
+.chaoshi_category_focus_key a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+/*-------------------------*/
+.goods_item {
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.goods_title {
+    display: block;
+    font-size: 12px;
+    color: #333;
+}
+
+.goods_add {
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #ffa133;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.goods_add:hover {
+    color: #fff;
+}
+
+.goods_price {
+    font-size: 18px;
+    color: #ff002f;
+    margin-bottom: 20px;
+}
+
+.chaoshi_category_goods .goods_price {
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+
+.chaoshi_category .goods_img {
+    min-width: 40%;
+    width: auto;
+    height: 130px;
+}
+
+.chaoshi_category_goods {
+    margin-left: 190px;
+    /*background-color: #fff;*/
+}
+
+.chaoshi_category_goods .goods_item {
+    width: 169px;
+    height: 233px;
+    padding: 10px 15px 0;
+    border-left: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.chaoshi_category_goods .goods_pic {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 17px;
+}
+
+
+
+.chaoshi_category_goods .goods_title {
+    margin-bottom: 7px;
+    height: 36px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+.goods_desc, .goods_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.chaoshi_category_goods .goods_add {
+    height: 50px;
+    line-height: 50px;
+}
+
+.goods_item .goods_add {
+    transition: bottom .25s ease;
+}
+
+.goods_item:hover .goods_add {
+    bottom: 0;
+}
+
+
+.goods_add_txt {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.chaoshi_category_goods .goods_prices_plus {
+    display: none;
+    float: right;
+    font-size: 0;
+}
+
+.chaoshi_category_goods .goods_prices_plus_txt {
+    margin-right: 5px;
+    font-size: 12px;
+    color: #000;
+}
+/*<!--------结束--------------------->*/ 
+/*--------底部开始---------------------*/
+#cmsfooter {
+    /*height: 480px;*/
+    /*position: relative;*/
+    /*top: 540px;*/
+    
+}
+#service-2020 {
+    padding-bottom: 18px;
+    background: #eaeaea;
+    overflow: hidden;
+    width: 100%;
+}
+#service-2020 .slogen li{
+	width: 282px;
+	height: 92px;
+}
+
+ #service-2020 .slogen,  #service-2020 .wrap {
+    padding-left: 45px;
+}
+
+ #service-2020 .slogen {
+    margin-right: -23px;
+}
+
+#service-2020 .slogen {
+  
+    position: relative;
+    height: 42px;
+    padding: 30px 0 30px 55px;
+    overflow: hidden;
+}
+
+#service-2020 .slogen .item {
+    float: left;
+    position: relative;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 700;
+    text-indent: 46px;
+    color: #444;
+}
+
+
+#service-2020 .slogen .item i {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 42px;
+    text-indent: -9999px;
+    background-image: url(../img/底部四张图.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+#service-2020 .slogen .fore2 i {
+    background-position: 0 -43px;
+}
+
+#service-2020 .slogen .fore3 i {
+    background-position: 0 -86px;
+}
+
+#service-2020 .slogen .fore4 i {
+    background-position: 0 -129px;
+}
+/*----------------------------------------------*/
+#service-2017 .jd-help {
+    border-top: solid 1px #dedede;
+    border-bottom: solid 1px #dedede;
+}
+
+ #service-2020 .wrap {
+    margin-right: 140px;
+    padding: 20px 0 20px 45px;
+    margin-right: 140px;
+    height: 160px;
+    width: 1340px;
+}
+
+#service-2020 dt {
+    padding-bottom: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #777;
+    height: 22px;
+}
+#service-2020 .jd-help dl {
+    width: 255px;
+    line-height: 22px;
+    float: left;
+}
+
+#service-2017 dd {
+    font-size: 12px;
+    color: #666;
+    height: 22px;
+    overflow: hidden;
+}
+
+/*----------------------------------------------*/ 
+.leftfixed{
+	position: fixed;
+	left: 0;
+	/*top: 0px;*/
+	top: 100px;
+}
+
+.chaoshi_lift_list li{
+      /*height: 50px;*/
+      font-size: 12px;
+}
+
+.chaoshi_lift_item_btn {
+    color: #666;
+    cursor: pointer;
+    border-bottom: 1px solid #f3f3f3;
+    padding: 3px 0;
+    display: block;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.chaoshi_lift_item_btn:hover, .chaoshi_lift_item_btn_active {
+    color: #fff;
+    background: #ffa133;
+}
+/*--------------------右边栏---------------*/
+.jdm-toolbar-tabs {
+    position: fixed;
+    /*top: 400px;*/
+   bottom: 0;
+    left: 0;
+    width: 35px;
+    margin-top: -61px;
+}
+.jdm-toolbar-tab {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+.jdm-toolbar-tab .tab-tip {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    background-position: -150px -150px;
+    z-index: 999;
+}
+
+.jdm-tbar-tab-jdvip .tab-ico {
+    background-position: -88px -175px;
+}
+.jdm-toolbar-tab .tab-ico {
+    width: 34px;
+    height: 35px;
+    margin-left: 1px;
+    position: relative;
+    z-index: 2;
+    background-color: #7a6e6e;
+    _display: block;
+}
+
+.jdm-toolbar-tab .tab-text {
+    width: 62px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    font-family: "微软雅黑";
+    position: absolute;
+    z-index: 1;
+    left: 35px;
+    top: 0;
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    -webkit-transition: left .3s ease-in-out .1s;
+    -moz-transition: left .3s ease-in-out .1s;
+    transition: left .3s ease-in-out .1s;
+    _display: none;
+}
+
+
+.jdm-toolbar-tab .tab-sub {
+    position: absolute;
+    z-index: 3;
+    right: 2px;
+    top: -5px;
+    height: 11px;
+    padding: 1px 2px;
+    border: 1px solid #b61d1d;
+    overflow: hidden;
+    color: #fff;
+    font: 11px/11px verdana;
+    text-align: center;
+    min-width: 11px;
+    _width: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #cc6060;
+    background-image: linear-gradient(to bottom,#cc6060 0,#b61d1d 100%);
+}
+.hide {
+    display: none;
+}
+.jdm-toolbar-tabs .tabs-tip {
+    position: absolute;
+    top: 0;
+    right: 35px;
+    height: 35px;
+    line-height: 35px;
+    white-space: nowrap;
+    border-radius: 5px;
+    background: #c81623;
+    color: #fff;
+    padding: 0 10px;
+        padding-left: 10px;
+    padding-left: 30px;
+}
+.jdm-toolbar-tabs .tabs-tip .ico {
+    width: 15px;
+    height: 12px;
+    background-position: -98px -162px;
+    position: absolute;
+    top: 13px;
+    left: 10px;
+}
+
+.jdm-toolbar-tabs .tabs-tip b {
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border: transparent 6px dashed;
+        border-left-color: transparent;
+        border-left-style: dashed;
+        border-left-width: 6px;
+    border-left: 6px solid #c81623;
+    position: absolute;
+    right: -12px;
+    top: 12px;
+    z-index: 20;
+}
+
+.jdm-tbar-panel-header .close-panel, .jdm-tbar-panel-header i, .jdm-toolbar-tab .tab-ico, .jdm-toolbar-tab .tab-tip, .jdm-toolbar-tabs .tabs-tip .ico {
+    display: inline-block;
+    background-image: url(//static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars.png);
+    background-repeat: no-repeat;
+}
+.jdm-tbar-tab-follow .tab-ico {
+    background-position: -50px -50px;
+}
+.jdm-tbar-tab-cart .tab-ico {
+    background-position: -50px 0;
+}
+
+.jdm-tbar-tab-history .tab-ico {
+    background-position: -50px -100px;
+}
+.jdm-tbar-tab-message .tab-ico {
+    background-position: -190px -150px;
+}
+.jdm-tbar-tab-jimi .tab-ico {
+    background-position: -50px -150px;
+}
+ 
+.tab-ico:hover{
+	background-color:#C81623;
+}
+.tab-text:hover{
+	left: -60px;
+	background-color:#C81623 ;
+}

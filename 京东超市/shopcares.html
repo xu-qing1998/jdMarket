@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+     <!--<title>企业采购</title>-->
+     <title>购物车</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shopcares.css">
+</head>
+<script src="js/jquery-1.8.2.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<body>
+    <div class="top">
+        <div class="box1">
+            <ul class="top_left">
+                <li><a href="#">京东首页</a></li>
+                <li><a href="#">江苏</a></li>
+            </ul>
+            <ul class="top_right">
+                <li><a href="#">jd_732ed0a8</a></li>
+                <li><a href="#">我的订单</a></li>
+                <li><a href="#">我的京东</a></li>
+                <li><a href="#">京东会员</a></li>
+                <li><a href="#">企业采购</a></li>
+                <li><a href="#">客户服务</a></li>
+                <li><a href="#">网站导航</a></li>
+                <li><a href="#">手机京东</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="logo1"></div>
+        <div class="search">
+            <input type="text" value="" id="search" />
+            <div class="text">搜索</div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main_top">
+            <div class="main_top_left">
+                <span>全部商品</span>
+                <input type="text" value="2">
+            </div>
+
+            <div class="main_top_right">
+                <span>配送至</span>
+                <select name="" id="adress">
+                    <option value="">江苏无锡市北塘区</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="cart-thead">
+            <div class="t-checkbox">
+                <input type="checkbox" name="" id="" class="checkall"> 全选
+            </div>
+            <div class="t-goods">商品</div>
+            <div class="t-price">单价</div>
+            <div class="t-num">数量</div>
+            <div class="t-sum">小计</div>
+            <div class="t-action">操作</div>
+        </div>
+
+        <div class="main">
+            <div class="main_first mains">
+                <div class="p-checkbox">
+                    <input type="checkbox" name="" id="" class="smallcheck s1">
+                </div>
+                <div class="products">
+                    <div class="photograph photograph1"></div>
+                    <div class="introduce">京东京造 藤椒无骨凤爪128g 网红脱骨鸡爪 休闲零食 即食食品</div>
+                    <div class="products_tips">藤椒无骨凤爪128g</div>
+                </div>
+                <div class="products_price">￥19.90</div>
+                <div class="counts">
+                    <span class="discrease">-</span>
+                    <input type="text" value="1" class="a">
+                    <span class="increase">+</span>
+                </div>
+                <input type="text" value="￥19.90" class="subtotal">
+                <button id="btn2">删除</button>
+            </div>
+
+            <div class="main_second mains">
+                <div class="p-checkbox">
+                    <input type="checkbox" name="" id="" class="smallcheck s2">
+                </div>
+                <div class="products">
+                    <div class="photograph photograph2"></div>
+                    <div class="introduce">法国依泉（Uriage）柔润护唇膏两支装（滋润保湿</div>
+                    <div class="products_tips">[保湿滋润]柔润唇膏</div>
+                </div>
+                <div class="products_price">￥65.00</div>
+                <div class="counts">
+                    <span class="discrease">-</span>
+                    <input type="text" value="1" class="a">
+                    <span class="increase">+</span>
+                </div>
+
+                <input type="text" value="￥65.00" class="subtotal">
+                <button id="btn2">删除</button>
+            </div>
+
+            <div class="bottom">
+                <div class="t-checkbox">
+                    <input type="checkbox" name="" id="" class="checkall"> 全选
+                </div>
+                <div class="delete">删除选中的商品</div>
+                <div class="end">
+                    <div class="end_left">已选择</div>
+                    <input type="text" value="0" class="num">
+                    <div class="end_right">件商品</div>
+
+                </div>
+
+                <div class="sum">
+                    <div class="sum_left">总价</div>
+                    <div class="sum_center">￥</div>
+                    <input type="text" value="0.00" class="all">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<!-- js -->
+
+<script>
+    $(function() {
+        $(".checkall").change(function() {
+            $(".smallcheck,.checkall").prop("checked", $(this).prop("checked"));
+        });
+
+        $(".smallcheck").change(function() {
+            if ($(".smallcheck:checked").length == $(".smallcheck").length) {
+                $(".checkall").prop("checked", true);
+            } else {
+                $(".checkall").prop("checked", false);
+            }
+        })
+
+        $(".increase").click(function() {
+            var count = $(this).siblings("input").val();
+            count++;
+            $(this).siblings("input").val(count);
+            var p = $(this).parents(".counts").siblings(".products_price").html();
+            p = p.substr(1);
+            var price = (p * count).toFixed(2);
+            $(this).parents(".counts").siblings(".subtotal").val("￥" + price);
+            getSum();
+        })
+
+        $(".discrease").click(function() {
+            var count = $(this).siblings("input").val();
+            if (count == 1) {
+                return false;
+            }
+            count--;
+            $(this).siblings("input").val(count);
+            var p = $(this).parents(".counts").siblings(".products_price").html();
+            p = p.substr(1);
+            var price = (p * count).toFixed(2);
+            $(this).parents(".counts").siblings(".subtotal").val("￥" + price);
+            getSum();
+        });
+
+        getSum();
+
+        function getSum() {
+
+            var n = 0; //总件数
+            var sum = 0; //总价
+            $(".a").each(function(i, ele) {
+                n += parseInt($(ele).val());
+            })
+
+            $(".num").val(n);
+
+            $(".subtotal").each(function(i, ele) {
+                sum += parseFloat($(ele).val().substr(1));
+            })
+
+            $(".all").val(sum.toFixed(2));
+        }
+
+
+        // (1) 商品后面的删除按钮
+        $("#btn2").click(function() {
+            // 删除的是当前的商品 
+            console.log($(this));
+            $(this).parents(".mains").remove();
+            getSum();
+        });
+        // (2) 删除选中的商品
+        $(".delete").click(function() {
+            // 删除的是小的复选框选中的商品
+            $(".smallcheckbox:checked").parents(".mains").remove();
+            getSum();
+        });
+
+
+
+    })
+</script>
+
+</html>

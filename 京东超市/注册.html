@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册页面</title>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/register.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*背景层*/
+        #popLayer {
+            display: none;
+            background-color: #B3B3B3;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=80);/* 只支持IE6、7、8、9 */
+        }
+ 
+        /*弹出层*/
+        #popBox {
+            display: none;
+            background-color: #FFFFFF;
+            z-index: 11;
+            width: 900px;
+            height: 570px;
+            position:fixed;
+            border: 4px solid #ccc;
+            top:0;
+            right:0;
+            left:0;
+            bottom:0;
+            margin:auto;
+        }
+ 
+        #popBox .close{
+            height: 30px;
+            line-height: 30px;
+            text-align: right;
+            margin-right: 5px;
+            background-color: #F8F8F8;
+            position: relative;
+        }
+ 
+        /*关闭按钮*/
+        #popBox .close a {
+            font-size: 20px;
+            text-decoration: none;
+            text-decoration: none;
+            color: #2D2C3B;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        /* 标题 */
+        #popBox .close h4{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-left: 10px;
+        }
+        /* 内容 */
+        .content{
+            width: 860px;
+            height: 400px;
+            position: absolute;
+            top: 30px;
+            padding: 20px;
+            font-size: 11.5pt;
+            font-family: 宋体;
+            line-height: 19px;
+            font-weight: 700;
+            color: #888;
+            overflow: auto;
+        }
+        .content a{
+            color: #c40414;
+        }
+        .content-1{
+            margin: 23px 0;
+        }
+        .tip{
+            padding-top: 25px;
+            margin: 26px 0;
+        }
+        .agreen{
+            width: 900px;
+            height: 60px;
+            position: absolute;
+            bottom: 0px;
+        }
+        .agreen button{
+            width: 400px;
+            height: 54px;
+            background-color: #EE2222;
+            color: #fff;
+            font-size: 16px;
+            border: 0;
+            text-align: center;
+            line-height: 54px;
+            padding: 1px 6px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -200px;
+        }
+/* ------------------------------------------------------------------------------------------------- */
+/* ==============================================内容部分============================================ */
+        a{
+            text-decoration: none;
+            color: #999;
+        }
+        .register-top{
+            height: 90px;
+            border-bottom: 5px solid #EE2222;
+        }
+        .w{
+            width: 1000px;
+            margin: 0 auto;
+            vertical-align: middle;
+            text-align: center;
+        }
+        .logo-top{
+            height: 90px;
+        }
+        .logo-top img{
+            width: 160px;
+            height: 50px;
+            margin: 20px 0 0;
+
+            float: left;
+        }
+        .logo-title{
+            width: 96px;height: 34px;
+            color: #333;
+            font-size: 24px;
+            margin: 34px 0 0 10px;
+
+            float: left;
+        }
+        
+/* -====================================================================== */
+        .register-main{
+            height: 480px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+        .register-main h3{
+            height: 42px;
+            border-bottom: 1px solid #ccc;
+            color: #999;
+            background-color: #ececec;
+            line-height: 42px;
+            text-align: left;
+            padding:0 10px;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .have-account{
+            width: 145px;
+            height: 20px;
+            color: #999;
+            font-size: 14px;
+            float: right;
+        }
+        .have-account a{
+            color: #EE2222;
+        }
+        .have-account a:hover{
+            text-decoration: underline;
+            color: #a01414;
+        }
+        .reg-form{
+            width: 600px;
+            margin: 40px auto 0;
+            padding-left: 80px;
+        }
+        .reg-form ul li label{
+            display: inline-block;
+            width: 88px;
+            text-align: right;
+        }
+        .reg-form ul li .inp{
+            width: 242px;
+            height: 37px;
+            font-size: 14px;
+            color: #666;
+            border: 1px solid #ccc;
+            margin: 0 10px;
+        }
+        .reg-form ul li{
+            margin-bottom: 20px;
+        }
+        .error{
+           color: red; 
+           display: none;
+        }
+        .success{
+           color: green;
+           display: none; 
+        }
+        .safe{
+            padding-left: 150px;
+        }
+        .safe em{
+            padding: 0 12px;
+            color: #fff;
+        }
+        .ruo{
+            background-color: red;
+        }
+        .zhong{
+            background-color: #f79100;
+        }
+        .qiang{
+            background-color: #40b83f;
+        }
+        .btn{
+            width: 200px;height: 34px;
+            background-color: #c81623;
+            font-size: 14px;
+            color: #fff;
+            margin:10px 0 0 110px ;
+            border: 0;
+        }
+        ul li input{
+            outline: none;
+        }
+ /* ============================================================================ */
+ li{
+     list-style: none;
+ }
+        .register-foot{
+            height: 117px;
+            font-size: 12px;
+            padding-bottom: 30px;
+        }
+        .link{
+            height: 21px;
+            padding: 30px 0 15px;
+            text-align: center;
+        }
+        .link a{
+            margin: 0 10px;
+        }
+        .link a:hover{
+            text-decoration: underline;
+        }
+        .copy{
+            color: #999;
+
+        }
+    </style>
+</head>
+<body>
+<div class="register-top">
+    <div class="logo-top w">
+        <a href="#" class="logo"><img src="img/jdlogo-201708-@1x.png" alt=""></a>
+        <div class="logo-title">欢迎注册</div>
+        
+    </div>
+</div>
+<div class="register-main">
+    <h3>注册新用户<div class="have-account">已有账号？<a href="#">请登录></a></div></h3>
+    <div class="reg-form">
+        <ul>
+            <li><label for="">用户名:</label><input type="text" class="inp " name="name2"></li>
+            <li><label for="">手机号:</label><input type="text" class="inp " name="phone"><span class="error">手机号码格式不正确，请重新输入</span></li>
+            <li><label for="">短信验证码:</label><input type="text" class="inp"><span class="success">输入正确</span></li>
+            <li><label for="">登录密码:</label><input type="password" class="inp"><span class="error">密码不少于6位数，请重新输入</span></li>
+            <li class="safe">安全程度<em class="ruo">弱</em><em class="zhong">中</em><em class="qiang">强</em></li>
+            <li><label for="">确认密码:</label><input type="password" class="inp"><span class="error">密码不一致，请重新输入</span></li>
+            <li><input type="submit" class="btn" id="submit" value="完成注册"></li>
+        </ul>
+    </div>
+</div>
+<div class="register-foot w">
+    <div class="link">
+        <a href="#">关于我们</a>|
+        <a href="#">联系我们</a>|
+        <a href="#">人才招聘</a>|
+        <a href="#">商家入驻</a>|
+        <a href="#">广告服务</a>|
+        <a href="#">手机京东</a>|
+        <a href="#">友情链接</a>|
+        <a href="#">销售联盟</a>|
+        <a href="#">京东社区</a>|
+        <a href="#">京东公益</a>|
+        <a href="#">English Site</a>
+    </div>
+    <div class="copy">
+        Copyright©2004-2020  京东JD.com 版权所有
+    </div>
+</div>
+<div id="popLayer"></div>
+<div id="popBox">
+    <div class="close">
+        <h4>京东用户注册协议和隐私政策</h4>
+        <a href="javascript:void(0)" onclick="closeBox()">×</a>
+    </div>
+    <div class="content">
+        <p>欢迎注册成为京东用户!在您注册过程中，您需要完成我们的注册流程并通过点击同意的形式在线签署以下协议，请您务必仔细阅读、充分理解协议中的条款内容后再点击同意（尤其是以粗体或下划线标识的条款，因为这些条款可能会明确您应履行的义务或对您的权利有所限制)。</p>
+        <p>【请您注意】如果您不同意以下协议全部或任何条款约定，请您停止注册。您停止注册后将仅可以浏览我们的商品信息但无法享受我们的产品或服务。如您按照注册流程提示填写信息，阅读并点击同意上述协议且完成全部注册流程后，即表示您已充分阅读、理解并接受协议的全部内容，并表明您同意我们可以依据协议内容来处理您的个人信息，并同意我们将您的订单信息共享给为完成此订单所必须的第三方合作方(详情查看<a>《订单共享与安全》</a>)。如您对以下协议内容有任何疑问，您可随时通过《京东隐私政策》中的联系方式联系我们。</p>
+        <div class="content-1">
+            <p>如您在使用我们的产品或服务中与其他用户发生争议的，依您与其他用户达成的协议处理。</p>
+        </div>
+        <div class="tip">
+            <a href="#">《京东用户注册协议》</a>
+            <p>一、服务条款的确认及接受</p>
+            <p>二、服务须知</p>
+            <p>三、订单</p>
+            <p>四、配送和交付</p>
+            <p>五、用户个人信息保护及授权</p>
+            <p>六、用户行为规范</p>
+            <p>七、本网站使用规范</p>
+            <p>八、违约责任</p>
+            <p>九、所有权及知识产权</p>
+            <p>十、法律管辖适用及其他</p>
+        </div>
+        <div class="secret">
+            <a href="#">《京东隐私政策》</a>
+            <p>《京东隐私政策》明确了我们的产品与/服务所收集、使用及共享个人信息的类型、方式和用途。以增强告知或即时提示的方式在收集、使用及共享个人信息时给予用户授权选择权，并在产品设置中允许用户撤销授权。明确了用户查询、更正和删除其个人信息以及注销用户账户的方式。</p>
+            <p>一、我们如何收集和使用您的个人信息</p>
+            <p>二、我们如何使用Cookies和同类技术</p>
+            <p>三、我们如何共享、转让、公开披露您的个人信息</p>
+            <p>四、我们如何保护和保存您的个人信息</p>
+            <p>五、您如何管理个人信息</p>
+            <p>六、未成年人的个人信息保护</p>
+            <p>七、通知和修订</p>
+            <p>八、如何联系我们</p>
+        </div>
+    </div>
+    <div class="agreen">
+        <button href="javascript:void(0)" onclick="closeBox()">同意并继续</button>
+    </div>
+</div>
+<script>
+    /*点击弹出按钮*/
+    window.onload=function(){
+        function popBox() {
+            var popBox = document.getElementById("popBox");
+            var popLayer = document.getElementById("popLayer");
+            popBox.style.display = "block";
+            popLayer.style.display = "block";
+        };
+        popBox()
+    }
+    
+ 
+    /*点击关闭按钮*/
+    function closeBox() {
+        var popBox = document.getElementById("popBox");
+        var popLayer = document.getElementById("popLayer");
+        popBox.style.display = "none";
+        popLayer.style.display = "none";
+    }
+</script>
+</body>
+</html>

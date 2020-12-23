@@ -1,0 +1,106 @@
+#footer-2020 {
+    height: 185px;
+    padding-bottom: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -650px;
+    top: 320px;
+    text-align: center;
+}
+
+.footer-link-2020{
+    height: 22px;
+    text-align: center;
+}
+
+.footer-link-2020>span {
+    margin: 0 7px;
+    color: #ccc;
+}
+
+.footer-link-2020>a:hover {
+    color: #F10215;
+}
+
+
+.footer-info {
+    height: 110px;
+    padding: 10px 0;
+    line-height: 22px;
+    color: #999;
+    text-align: center;
+}
+
+.footer-info span {
+    margin: 0 10px;
+}
+
+.footer-info-flag {
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.footer-info p>a {
+    line-height: 22px;
+    color: #999;
+}
+
+.footer-info p>a:hover {
+    color: #F10215;
+}
+
+.footer-auth {
+    height: 36px;
+    margin-top: 60px;
+}
+
+.footer-auth>a {
+    display: inline-block;
+    margin: 0 3px;
+    width: 103px;
+    height: 32px;
+    background-image: url(../img/ico_footer.png);
+}
+
+.tips2 {
+    background-position: -105px -153px;
+}
+
+.tips3 {
+    background-position: -1px -185px;
+}
+
+.tips4 {
+    background-position: -105px -185px;
+}
+
+.tips5 {
+    background-position: -1px -218px;
+}
+
+.tips6 {
+    background-position: -105px -218px;
+}
+
+.first .goodsPhoto {
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.first .goodsPhoto:hover {
+    transform: translateY(-6px);
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    -o-transform: translateY(-6px);
+}
+
+.divider_content button:hover {
+    background-color: #7B68AB;
+    color: white;
+}

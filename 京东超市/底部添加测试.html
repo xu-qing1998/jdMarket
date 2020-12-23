@@ -1,0 +1,1874 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<title>京东首页</title>
+		<link rel="stylesheet" type="text/css" href="css/底部添加测试01.css"/>
+		<link rel="stylesheet" type="text/css" href="css/底部添加测试02.css">
+		<link rel="stylesheet" type="text/css" href="css/style-许晨.css"/>
+		<link rel="stylesheet" type="text/css" href="css/下拉列表.css"/>
+		<link rel="stylesheet" type="text/css" href="css/底部添加自定义.css"/>
+		
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>侧边栏测试</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize-02.css" />
+	<link rel="stylesheet" type="text/css" href="css/htmleaf-demo-02.css">
+	<link rel="stylesheet" type="text/css" href="css/style-02-许晨.css" />
+	<link rel="stylesheet" type="text/css" href="css/自定义侧边栏.css"/>
+	<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script type="text/javascript" src="js/web.js"></script>
+	
+	
+	</head>
+	<style type="text/css">
+		@font-face {
+	  font-family: 'icomoon';
+	  src:  url('fonts/icomoon.eot?y6o1lm');
+	  src:  url('fonts/icomoon.eot?y6o1lm#iefix') format('embedded-opentype'),
+	    url('fonts/icomoon.ttf?y6o1lm') format('truetype'),
+	    url('fonts/icomoon.woff?y6o1lm') format('woff'),
+	    url('fonts/icomoon.svg?y6o1lm#icomoon') format('svg');
+	  font-weight: normal;
+	  font-style: normal;
+	  font-display: block;
+	}
+	.iconfont{
+		font-family: 'icomoon';
+	}
+	</style>
+	<body>
+<!--头部灰色的部分-->
+		<div id="shortcut">
+			<div class="w">
+				<ul class="fl">
+					<li id="ttbar-home">
+					<i class="iconfont"></i>
+					<a href="//www.jd.com/" target="_blank">京东首页</a>
+					</li>
+			    </ul>
+			    
+				<ul class="fr">
+				<li class="fore1" id="ttbar-login">
+					<a href="http://127.0.0.1:8020/%E4%BA%AC%E4%B8%9C%E8%B6%85%E5%B8%82/denglu.html?__hbt=1605155854403#" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a href="http://127.0.0.1:8020/%E4%BA%AC%E4%B8%9C%E8%B6%85%E5%B8%82/%E6%B3%A8%E5%86%8C.html?__hbt=1605155099820" class="link-regist style-red">免费注册</a>
+				</li>
+				<li class="spacer"></li>
+				<li class="fore2">
+					<div class="dt">
+						<a target="_blank" href="//order.jd.com/center/list.action">我的订单</a>
+					</div>
+				</li>
+				<li class="spacer"></li>
+				<li class="fore3 dorpdown" id="ttbar-myjd" >
+					<div class="dt cw-icon">
+						<a target="_blank" href="//home.jd.com/" id="myjingdong-01">我的京东</a><i class="iconfont"></i>
+					</div>
+					<div class="dd dorpdown-layer"><div class="dd-spacer"></div><div class="dd-inner"><span class="loading"></span></div></div>
+				</li>
+				<div style="display: none;" id="myjingdongshow">
+					<ul id="ulfirst-01">
+					<li>待处理订单</li>
+					<li>消息</li>
+					<li>返修退换货</li>
+					<li>我的问答</li>
+					<li>降价商品</li>
+					<li>我的关注</li>
+					</ul>
+					 <ul id="ulsecond-02">
+					 	<li>我的京豆</li>
+					 	<li>我的优惠卷</li>
+					 	<li>我的白条</li>
+					 	<li>我的理财</li>
+					 </ul>
+				</div>
+				<li class="spacer"></li>
+				<li class="fore4" >
+					<div class="dt" >
+						<a target="_blank" href="//vip.jd.com/">京东会员</a>
+					</div>
+				</li>
+				<li class="spacer"></li>
+				<li class="fore5">
+					<div class="dt">
+						<a target="_blank" href="//b.jd.com/">企业采购</a>
+					</div>
+				</li>
+				<li class="spacer"></li>
+				<li class="fore6 dorpdown" id="ttbar-serv">
+					<div class="dt cw-icon">
+						客户服务<i class="iconfont"></i>
+					</div>
+					<div class="dd dorpdown-layer"><div class="dd-spacer"></div><div class="dd-inner"><span class="loading"></span></div></div>
+				</li>
+				<div id="myclient" style="display: none;">
+				  <ul id="myclient-01">
+				  	 <li id="myclientli-01">客户</li>
+				  	 <li >帮助中心</li>
+				  	 <li >售后服务</li>
+				  	 <li >在线服务</li>
+				  	 <li >意见建议</li>
+				  	 <li >电话服务</li>
+				  	 <li >客服邮箱</li>
+				  	 <li >金融资讯</li>
+				  	 <li >全球售客服</li>
+				  </ul>	
+				  <ul id="myclient-02">
+				  	 <li id="myclientli-01">商户</li>
+				  	 <li >合作招商</li>
+				  	 <li >成长中心</li>
+				  	 <li >商家后台</li>
+				  	 <li >京麦工作台</li>
+				  	 <li >商家帮助</li>
+				  	 <li >规则平台</li>
+				  </ul>
+				</div>
+				
+				<li class="spacer"></li>
+				<li class="fore7 dorpdown" id="ttbar-navs">
+					<div class="dt cw-icon">
+						网站导航<i class="iconfont"></i>
+					</div>
+					<div class="dd dorpdown-layer"><div class="dd-spacer"></div><div class="dd-inner"><span class="loading"></span></div></div>
+				</li>
+				<li class="spacer"></li>
+				<li class="fore8 dorpdown" id="ttbar-apps">
+					<div class="dt cw-icon">
+						<a target="_blank" href="//app.jd.com/">手机京东</a>
+					</div>
+				</li>
+			</ul>
+			</div>
+		</div>
+	<!--第二层-->
+	<div id="o-header"><div id="header-2013" style="display:none;"></div></div>
+	<!--第三层-->
+	<div class="w has_qrcode">
+		
+		<!--------------->
+		<div id="logo-2020">
+			<a href="//chaoshi.jd.com" class="logo"></a>
+			
+            <div class="dropdown logo_dropdown clearfix">
+                <div class="fl dropdown_locate">
+                </div>
+                <ul class="fl dropdown_wrap" >
+                    <li id="ttbar-mycity" class="dropdown_box">	
+                   <div class="dt cw-icon ui-areamini-text-wrap" style="">	
+                   	<i class="iconfont"></i>	
+                   	<span class="ui-areamini-text" data-id="12" title="江苏">江苏</span> 	
+                   </div>	
+                   <div class="dd dorpdown-layer">	
+                   	<div class="dd-spacer"></div>	
+                   	<div class="ui-areamini-content-wrap" style="left: auto;"> 	
+                   		<div class="ui-areamini-content">
+                   			<div class="ui-areamini-content-list clearfix">
+                   				<div class="item">
+                   					<a data-id="1" href="javascript:void(0)">北京</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="2" href="javascript:void(0)">上海</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="3" href="javascript:void(0)">天津</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="4" href="javascript:void(0)">重庆</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="5" href="javascript:void(0)">河北</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="6" href="javascript:void(0)">山西</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="7" href="javascript:void(0)">河南</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="8" href="javascript:void(0)">辽宁</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="9" href="javascript:void(0)">吉林</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="10" href="javascript:void(0)">黑龙江</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="11" href="javascript:void(0)">内蒙古</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="12" href="javascript:void(0)" class="selected">江苏</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="13" href="javascript:void(0)">山东</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="14" href="javascript:void(0)">安徽</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="15" href="javascript:void(0)">浙江</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="16" href="javascript:void(0)">福建</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="17" href="javascript:void(0)">湖北</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="18" href="javascript:void(0)">湖南</a>
+                   				</div><div class="item">
+                   					<a data-id="19" href="javascript:void(0)">广东</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="20" href="javascript:void(0)">广西</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="21" href="javascript:void(0)">江西</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="22" href="javascript:void(0)">四川</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="23" href="javascript:void(0)">海南</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="24" href="javascript:void(0)">贵州</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="25" href="javascript:void(0)">云南</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="26" href="javascript:void(0)">西藏</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="27" href="javascript:void(0)">陕西</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="28" href="javascript:void(0)">甘肃</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="29" href="javascript:void(0)">青海</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="30" href="javascript:void(0)">宁夏</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="31" href="javascript:void(0)">新疆</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="52993" href="javascript:void(0)">港澳</a>
+                   				</div>
+                   				<div class="item"><
+                   					a data-id="32" href="javascript:void(0)">台湾</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="84" href="javascript:void(0)">钓鱼岛</a>
+                   				</div>
+                   				<div class="item">
+                   					<a data-id="53283" href="javascript:void(0)">海外</a>
+                   				</div>
+                   			</div>
+                   		</div> 	
+                   	</div> 	
+                   	<div class="areamini_inter"> 
+                   		<div class="areamini_inter_split"></div> 
+                   		<p class="areamini_inter_desc">地区专享版本</p> 
+                   		<ul class="areamini_inter_list"> 	
+                   			<li class="areamini_inter_item"> 
+                   				<a class="areamini_inter_lk" href="//hk.jd.com" target="_blank" > 	
+                   					<div class="areamini_inter_name">中國港澳</div> 					
+                   				</a> 				
+                   			</li> 				
+                   			<li class="areamini_inter_item"> 				
+                   				<a class="areamini_inter_lk" href="//tw.jd.com" target="_blank" > 			
+                   					<div class="areamini_inter_name">中國台灣</div> 				
+                   				</a> 					
+                   			</li> 					
+                   			<li class="areamini_inter_item"> 		
+                   				<a class="areamini_inter_lk" href="//global.jd.com" target="_blank" > 			
+                   					<div class="areamini_inter_name">京东全球</div> 	
+                   				</a> 				
+                   			</li> 				
+                   		</ul> 				
+                   	</div> 			
+                   	<div class="areamini_inter"> 	
+                   		<div class="areamini_inter_split"></div> 
+                   		<p class="areamini_inter_desc">Available Sites</p> 	
+                   		<ul class="areamini_inter_list"> 				
+                   			<li class="areamini_inter_item"> 			
+                   				<a class="areamini_inter_lk" href="//www.joybuy.com/?source=1&amp;visitor_from=2" target="_blank"> 
+                   					<div class="areamini_inter_ico areamini_inter_ico_global"></div> 	
+                   					<div class="areamini_inter_name">Global Site</div> 				
+                   				</a> 				
+                   			</li> 		
+                   			<li class="areamini_inter_item"> 		
+                   				<a class="areamini_inter_lk" href="//www.jd.ru/?source=1&amp;visitor_from=2" target="_blank"> 				
+                   					<div class="areamini_inter_ico areamini_inter_ico_russia"></div> 	
+                   					<div class="areamini_inter_name">Сайт России</div> 		
+                   				</a> 				
+                   			</li> 					
+                   			<li class="areamini_inter_item"> 		
+                   				<a class="areamini_inter_lk" href="//www.jd.id/?source=1&amp;visitor_from=2" target="_blank"> 
+                   									
+                   					<div class="areamini_inter_ico areamini_inter_ico_indonesia"></div> 	
+                   						
+                   							
+                   					<div class="areamini_inter_name">Situs Indonesia</div> 	
+                   				</a> 			
+                   			</li> 				
+                   			<li class="areamini_inter_item"> 		
+                   				<a class="areamini_inter_lk" href="//www.joybuy.es/?source=1&amp;visitor_from=2" target="_blank" > 					
+                   					<div class="areamini_inter_ico areamini_inter_ico_spain"></div> 	
+                   					<div class="areamini_inter_name">Sitio de España</div> 			
+                   				</a> 					
+                   			</li> 				
+                   			<li class="areamini_inter_item"> 	
+                   				<a class="areamini_inter_lk" href="//www.jd.co.th/?source=1&amp;visitor_from=2" target="_blank" > 	
+                   					<div class="areamini_inter_ico areamini_inter_ico_thailand"></div> 
+                   						
+                   										
+                   					<div class="areamini_inter_name">เว็บไซต์ประเทศไทย</div> 		
+                   				</a> 				
+                   			</li> 				
+                   		</ul> 				
+                   	</div> 			
+                   </div>		
+                  </li>
+              </ul>
+           </div>
+            
+		</div>
+		<!-------------->
+		<div id="search-2014">
+            <!--<ul id="shelper" class="hide" style="display: none;"></ul>-->
+            <div class="form">
+                <input placeholder="食品" type="text" id="key"  class="text">
+                <button onclick="search('key');return false;" class="button cw-icon">
+                    <i></i> 搜索
+                </button>
+            </div>
+        </div>
+        
+		<!-------------->
+		<div id="settleup-2014" class="dorpdown">
+            <div class="cw-icon">
+                <i class="ci-left">
+                </i>
+                <i class="ci-right">
+                &gt;
+                </i><i class="ci-count" id="shopping-amount">0</i>
+                <a target="_blank" href="http://127.0.0.1:8020/%E4%BA%AC%E4%B8%9C%E8%B6%85%E5%B8%82/shopcares.html?__hbt=1605157926128">
+                    我的购物车
+                </a>
+            </div>
+            <div class="dorpdown-layer"><div class="spacer"></div>
+            <div id="settleup-content"><span class="loading"></span></div>
+            </div>
+        </div>
+        <!-------------->
+        <div id="hotwords">
+        	<a data-id="10491"  href="//search.jd.com/Search?keyword=%E6%BB%A1199%E5%87%8F100&amp;enc=utf-8&amp;spm=2.1.1" target="_blank">满199减100</a>
+        	<a data-id="10769"  href="//pro.jd.com/mall/active/AEmd8ngxL6W5NoHcfXaWCSXz2J6/index.html" target="_blank">健康守护</a>
+        	<a data-id="10771"  href="//search.jd.com/Search?keyword=%E7%BE%8E%E9%85%92&amp;enc=utf-8&amp;spm=2.1.1" target="_blank">中外美酒</a>
+        	<a data-id="10772"  href="//search.jd.com/Search?keyword=%E9%85%92%E8%A6%81%E8%B6%85%E5%80%BC&amp;enc=utf-8&amp;spm=2.1.1" target="_blank">个人护理</a>
+        	<a data-id="10773"  href="//search.jd.com/Search?keyword=%E7%B2%BE%E9%80%89%E4%BD%B3%E9%85%BF&amp;enc=utf-8&amp;spm=2.1.1" target="_blank">纸品家清</a>
+        </div>
+        <!-------二维码部分------->
+        <div class="headerqrcode" style="display: block;" id="J_headerqrcode">
+        	<a href="javascript:;" class="headerqrcode_lk">
+        		<i class="headerqrcode_ico"></i><span class="headerqrcode_txt">扫码享受优惠</span>
+        	</a>
+        		<div class="headerqrcode_qc">
+        			<div class="headerqrcode_qcimg">
+        				<img  src="//qrimg.jd.com/https%3A%2F%2Fh5.m.jd.com%2Frn%2F3LmeNuQDfT1nN8qZS4jZoZQMFeV7%2Findex.html-110-1-4-0.png?v=1">
+        			</div>
+        			<div class="headerqrcode_arrow">
+        				<i class="headerqrcode_arrow_bd">  </i>
+        			    <i class="headerqrcode_arrow_bg">  </i>
+        			</div>
+        		</div>
+        </div>
+	</div>
+<!------主体部分---------------------------->
+     <div class="mod_container">
+<!------版心部分---------------------------->     	
+     	<div id="chaoshi_fs_1" class="chaoshi_fs">
+     		
+     		<div class="chaoshi_menu">
+     			<div class="grid_c1 clearfix w">
+     				<div class="chaoshi_menu_orange">
+     					京东超市频道分类
+     				</div>
+     				
+     				<ul class="chaoshi_menu_list clearfix fl">
+     					<li class="chaoshi_menu_list_item fl" >
+     						<i class="chaoshi_menu_list_split"></i>
+     						<a href="//chaoshi.jd.com"  target="_blank" class="chaoshi_menu_list_link chaoshi_menu_list_link_on" title="超市首页">超市首页</a>
+     					</li>
+     					<li class="chaoshi_menu_list_item fl" >
+     						<i class="chaoshi_menu_list_split"></i>
+     						<a href="//chaoshi.jd.com/liangfan"  target="_blank" class="chaoshi_menu_list_link" title="超值量贩">超值量贩</a>
+     					</li>
+     					<li class="chaoshi_menu_list_item fl" >
+     						<i class="chaoshi_menu_list_split"></i>
+     						<a href="http://127.0.0.1:8020/%E4%BA%AC%E4%B8%9C%E8%B6%85%E5%B8%82/fresh1.html?__hbt=1605155694140"  target="_blank" class="chaoshi_menu_list_link" title="京东生鲜">京东生鲜</a>
+     					</li>
+     					<li class="chaoshi_menu_list_item fl" >
+     						<i class="chaoshi_menu_list_split"></i>
+     						<a href="http://127.0.0.1:8020/%E4%BA%AC%E4%B8%9C%E8%B6%85%E5%B8%82/%E8%BF%9B%E5%8F%A3.html?__hbt=1605155035661"  target="_blank" class="chaoshi_menu_list_link" title="进口食品">进口食品</a>
+     					</li>
+     					<li class="chaoshi_menu_list_item fl" >
+     						<i class="chaoshi_menu_list_split"></i>
+     						<a href="//samsclub.jd.com/"  target="_blank" class="chaoshi_menu_list_link" title="山姆会员店">山姆会员店</a>
+     					</li>
+     					<li class="chaoshi_menu_list_item fl">
+     						<i class="chaoshi_menu_list_split"></i>
+     						<a href="http://127.0.0.1:8020/%E4%BA%AC%E4%B8%9C%E8%B6%85%E5%B8%82/Purchase.html?__hbt=1605155385428"  target="_blank" class="chaoshi_menu_list_link" title="企业采购">企业采购</a>
+     					</li>
+     				</ul>
+     				
+     				<ul class="chaoshi_menu_ad clearfix fr">
+     					<li class="chaoshi_menu_ad_item fl chaoshi_menu_ad_item_first">
+     						<i class="mod_png chaoshi_menu_ad_icon" style="background-image: url(//img11.360buyimg.com/cms/jfs/t5176/120/2413062618/773/fafe7aa3/591aa606Nfe17fd41.png);">
+     						</i>
+     						<span class="chaoshi_menu_ad_txt">满99免运费</span></li>
+     						<li class="chaoshi_menu_ad_item fl">
+     						<i class="mod_png chaoshi_menu_ad_icon" style="background-image: url(//img12.360buyimg.com/cms/jfs/t5464/344/2422426436/707/47720902/591aa62aN516cd9c6.png);">
+     						</i>
+     						<span class="chaoshi_menu_ad_txt">100%渠道保证</span>
+     					</li>
+     				</ul>
+     				
+     			</div>
+     		</div>
+<!------------------->
+			<div class="chaoshi_banner_inner w">
+				
+				<div class="chaoshi_nav_body">
+					<div class="product_sort fl">
+			<div class="bd">
+				<div class="item">
+					<div class="title one"><a href="#"><i></i>食品饮料</a></div>
+					<div class="list">
+						<a href="#">休闲食品</a>
+						<a href="#">牛奶</a>
+						<a href="#">饮料</a>
+					</div>
+					<div class="arrow-0">&gt;</div>
+					<div class="line"></div>
+					<div class="subitem">
+						<div class="inner">
+							<div class="tit tit1">
+								<div class="name">食品</div>
+								<ul>
+									<li><a href="#">饼干蛋糕</a></li>
+									<li><a href="#">休闲零食</a></li>
+									<li><a href="#">橄榄油</a></li>
+									<li><a href="#">坚果蜜饯</a></li>
+									<li><a href="#">巧克力</a></li>
+									<li><a href="#">鸭脖</a></li>
+									<li><a href="#">海苔</a></li>
+									<li><a href="#">薯片</a></li>
+									<li><a href="#">牛肉干</a></li>
+									<li><a href="#">辣条</a></li>
+									<li><a href="#">越南</a></li>
+									<li><a href="#">芒果干</a></li>
+									<li><a href="#">山楂</a></li>
+									<li><a href="#">巴旦木</a></li>
+									<li><a href="#">面包</a></li>
+									<li><a href="#">葡萄干</a></li>
+									<li><a href="#">饼干蛋糕</a></li>
+									<li><a href="#">休闲零食</a></li>
+									<li><a href="#">橄榄油</a></li>
+									<li><a href="#">坚果蜜饯</a></li>
+									<li><a href="#">巧克力</a></li>
+									<li><a href="#">鸭脖</a></li>
+									<li><a href="#">海苔</a></li>
+									<li><a href="#">薯片</a></li>
+									<li><a href="#">牛肉干</a></li>
+								</ul>
+							</div>
+							<div class="tit">
+								<div class="name">牛奶和饮料</div>
+								<ul>
+									<li><a href="#">进口牛奶</a></li>
+									<li><a href="#">酸奶</a></li>
+									<li><a href="#">脉动</a></li>
+									<li><a href="#">可乐</a></li>
+									<li><a href="#">成人奶粉</a></li>
+									<li><a href="#">乳酸饮料</a></li>
+									<li><a href="#">麦片</a></li>
+									<li><a href="#">乌龙茶</a></li>
+									<li><a href="#">铁观音</a></li>
+									<li><a href="#">龙井</a></li>
+									<li><a href="#">白茶</a></li>
+									<li><a href="#">黑茶</a></li>
+									<li><a href="#">花果茶</a></li>
+									<li><a href="#">普洱</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="title two"><a href="#"><i></i>粮油副食</a></div>
+					<div class="list">
+						<a href="#">食用油</a>
+						<a href="#">米面</a>
+						<a href="#">厨房调味</a>
+					</div>
+					<div class="arrow-0">&gt;</div>
+					<div class="line"></div>
+					<div class="subitem">
+						<div class="inner">
+							<div class="tit tit1">
+								<div class="name">食用油和厨房调味</div>
+								<ul>
+									<li><a href="#">花生油</a></li>
+									<li><a href="#">调和油</a></li>
+									<li><a href="#">玉米油</a></li>
+									<li><a href="#">葵花籽油</a></li>
+									<li><a href="#">橄榄油</a></li>
+									<li><a href="#">茶油</a></li>
+									<li><a href="#">大豆油</a></li>
+									<li><a href="#">菜籽油</a></li>
+									<li><a href="#">花生油</a></li>
+									<li><a href="#">调和油</a></li>
+									<li><a href="#">玉米油</a></li>
+									<li><a href="#">葵花籽油</a></li>
+									<li><a href="#">橄榄油</a></li>
+									<li><a href="#">茶油</a></li>
+									<li><a href="#">大豆油</a></li>
+									<li><a href="#">菜籽油</a></li>
+									<li><a href="#">花生油</a></li>
+									<li><a href="#">调和油</a></li>
+									<li><a href="#">玉米油</a></li>
+									<li><a href="#">葵花籽油</a></li>
+									<li><a href="#">橄榄油</a></li>
+									<li><a href="#">茶油</a></li>
+									<li><a href="#">大豆油</a></li>
+									<li><a href="#">菜籽油</a></li>
+								</ul>
+							</div>
+							<div class="tit">
+								<div class="name">方便速食和地方特产</div>
+								<ul>
+									<li><a href="#">方便面</a></li>
+									<li><a href="#">方便米饭</a></li>
+									<li><a href="#">火腿肠</a></li>
+									<li><a href="#">罐头</a></li>
+									<li><a href="#">八宝粥</a></li>
+									<li><a href="#">调食米粥</a></li>
+									<li><a href="#">麦片谷物</a></li>
+									<li><a href="#">方便粉丝</a></li>
+									<li><a href="#">北京特产</a></li>
+									<li><a href="#">合肥特产</a></li>
+									<li><a href="#">越南特产</a></li>
+									<li><a href="#">下龙湾特产</a></li>
+									<li><a href="#">吴哥特产</a></li>
+									<li><a href="#">芽庄特产</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="title three"><a href="#"><i></i>个人护理</a></div>
+					<div class="list">
+						<a href="#">洗发护发</a>
+						<a href="#">身体</a>
+						<a href="#">口腔</a>
+						<a href="#">女性</a>
+					</div>
+					<div class="arrow-0">&gt;</div>
+					<div class="line"></div>
+					<div class="subitem">
+						<div class="inner">
+							<div class="tit tit1">
+								<div class="name">洗发护理</div>
+								<ul>
+									<li><a href="#">洗发</a></li>
+									<li><a href="#">护发素</a></li>
+									<li><a href="#">护发精油</a></li>
+									<li><a href="#">发膜</a></li>
+									<li><a href="#">套装</a></li>
+									<li><a href="#">染发</a></li>
+									<li><a href="#">沐浴</a></li>
+									<li><a href="#">剃须</a></li>
+									<li><a href="#">卫生巾</a></li>
+									<li><a href="#">卫生棉</a></li>
+									<li><a href="#">洗发</a></li>
+									<li><a href="#">护发素</a></li>
+									<li><a href="#">护发精油</a></li>
+									<li><a href="#">发膜</a></li>
+									<li><a href="#">套装</a></li>
+									<li><a href="#">染发</a></li>
+									<li><a href="#">沐浴</a></li>
+									<li><a href="#">剃须</a></li>
+									<li><a href="#">卫生巾</a></li>
+									<li><a href="#">卫生棉</a></li>
+									<li><a href="#">洗发</a></li>
+									<li><a href="#">护发素</a></li>
+									<li><a href="#">护发精油</a></li>
+									<li><a href="#">发膜</a></li>
+									<li><a href="#">套装</a></li>
+								</ul>
+							</div>
+							<div class="tit">
+								<div class="name">口腔护理</div>
+								<ul>
+									<li><a href="#">涑口水</a></li>
+									<li><a href="#">牙膏</a></li>
+									<li><a href="#">牙粉</a></li>
+									<li><a href="#">牙线</a></li>
+									<li><a href="#">牙刷</a></li>
+									<li><a href="#">假牙清洗</a></li>
+									<li><a href="#">电动牙刷</a></li>
+									<li><a href="#">牙缝刷</a></li>
+									<li><a href="#">套装</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="title four"><a href="#"><i></i>护肤美妆</a></div>
+					<div class="list">
+						<a href="#">面部护肤</a>
+						<a href="#">香水彩妆</a>
+						<a href="#">男士</a>
+					</div>
+					<div class="arrow-0">&gt;</div>
+					<div class="line"></div>
+					<div class="subitem">
+						<div class="inner">
+							<div class="tit tit1">
+								<div class="name">面部护肤</div>
+								<ul>
+									<li><a href="#">面膜</a></li>
+									<li><a href="#">卸妆</a></li>
+									<li><a href="#">洁面</a></li>
+									<li><a href="#">爽肤水</a></li>
+									<li><a href="#">乳液面霜</a></li>
+									<li><a href="#">精华</a></li>
+									<li><a href="#">眼霜</a></li>
+									<li><a href="#">防晒霜</a></li>
+									<li><a href="#">眼霜</a></li>
+									<li><a href="#">身体护理</a></li>
+									<li><a href="#">面膜</a></li>
+									<li><a href="#">卸妆</a></li>
+									<li><a href="#">洁面</a></li>
+									<li><a href="#">爽肤水</a></li>
+									<li><a href="#">乳液面霜</a></li>
+									<li><a href="#">精华</a></li>
+									<li><a href="#">眼霜</a></li>
+									<li><a href="#">防晒霜</a></li>
+									<li><a href="#">眼霜</a></li>
+									<li><a href="#">身体护理</a></li>
+									<li><a href="#">沐浴</a></li>
+									<li><a href="#">润足</a></li>
+									<li><a href="#">Q版香水</a></li>
+									<li><a href="#">男士香水</a></li>
+									<li><a href="#">香水套装</a></li>
+									<li><a href="#">女士香水</a></li>
+								</ul>
+							</div>
+							<div class="tit">
+								<div class="name">香水彩妆</div>
+								<ul>
+									<li><a href="#">化妆工具</a></li>
+									<li><a href="#">美体工具</a></li>
+									<li><a href="#">美甲工具</a></li>
+									<li><a href="#">底妆</a></li>
+									<li><a href="#">眉笔</a></li>
+									<li><a href="#">眼线</a></li>
+									<li><a href="#">睫毛膏</a></li>
+									<li><a href="#">腮红</a></li>
+									<li><a href="#">眼彩</a></li>
+									<li><a href="#">美妆工具</a></li>
+									<li><a href="#">眼影</a></li>
+									<li><a href="#">男士套装</a></li>
+									<li><a href="#">眉笔</a></li>
+									<li><a href="#">眼线</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="title five"><a href="#"><i></i>家居清洁</a></div>
+					<div class="list">
+						<a href="#">纸品湿巾</a>
+						<a href="#">衣物清洁</a>
+						<a href="#">厨房用品</a>
+						
+					</div>
+					<div class="arrow-0">&gt;</div>
+					<div class="line"></div>
+					<div class="subitem">
+						<div class="inner">
+							<div class="tit tit1">
+								<div class="name">纸品湿巾</div>
+								<ul>
+									<li><a href="#">抽纸</a></li>
+									<li><a href="#">卷纸</a></li>
+									<li><a href="#">湿巾</a></li>
+									<li><a href="#">手帕纸</a></li>
+									<li><a href="#">厨房用纸</a></li>
+									<li><a href="#">商务用纸</a></li>
+									<li><a href="#">手洗洗衣液</a></li>
+									<li><a href="#">机洗洗衣液</a></li>
+									<li><a href="#">衣物护理剂</a></li>
+									<li><a href="#">除菌消毒</a></li>
+									<li><a href="#">洗衣粉</a></li>
+									<li><a href="#">抽纸</a></li>
+									<li><a href="#">卷纸</a></li>
+									<li><a href="#">湿巾</a></li>
+									<li><a href="#">手帕纸</a></li>
+									<li><a href="#">厨房用纸</a></li>
+									<li><a href="#">商务用纸</a></li>
+									<li><a href="#">手洗洗衣液</a></li>
+									<li><a href="#">机洗洗衣液</a></li>
+									<li><a href="#">衣物护理剂</a></li>
+									<li><a href="#">除菌消毒</a></li>
+									<li><a href="#">洗衣粉</a></li>
+									<li><a href="#">洗手液</a></li>
+									<li><a href="#">洗洁精</a></li>
+									<li><a href="#">地板清洁</a></li>
+									<li><a href="#">家电清洁</a></li>
+								</ul>
+							</div>
+							<div class="tit">
+								<div class="name">一次性用品</div>
+								<ul>
+									<li><a href="#">手套</a></li>
+									<li><a href="#">垃圾袋</a></li>
+									<li><a href="#">口罩</a></li>
+									<li><a href="#">餐具用品</a></li>
+									<li><a href="#">厨房用品</a></li>
+									<li><a href="#">浴室用品</a></li>
+									<li><a href="#">洗衣皂</a></li>
+									<li><a href="#">手套</a></li>
+									<li><a href="#">垃圾袋</a></li>
+									<li><a href="#">口罩</a></li>
+									<li><a href="#">餐具用品</a></li>
+									<li><a href="#">厨房用品</a></li>
+									<li><a href="#">浴室用品</a></li>
+									<li><a href="#">洗衣皂</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="title six"><a href="#"><i></i>母婴用品</a></div>
+					<div class="list">
+						<a href="#">奶粉</a>
+						<a href="#">尿裤</a>
+						<a href="#">玩具</a>
+						
+					</div>
+					<div class="arrow-0">&gt;</div>
+					<div class="line"></div>
+					<div class="subitem">
+						<div class="inner">
+							<div class="tit tit1">
+								<div class="name">婴儿用品</div>
+								<ul>
+									<li><a href="#">婴儿奶粉</a></li>
+									<li><a href="#">成人奶粉</a></li>
+									<li><a href="#">宝宝护肤</a></li>
+									<li><a href="#">宝宝洗浴</a></li>
+									<li><a href="#">理发器</a></li>
+									<li><a href="#">奶瓶清洗</a></li>
+									<li><a href="#">儿童餐具</a></li>
+									<li><a href="#">水杯</a></li>
+									<li><a href="#">米粉</a></li>
+									<li><a href="#">益生菌</a></li>
+									<li><a href="#">初乳</a></li>
+									<li><a href="#">果泥</a></li>
+									<li><a href="#">婴儿奶粉</a></li>
+									<li><a href="#">成人奶粉</a></li>
+									<li><a href="#">宝宝护肤</a></li>
+									<li><a href="#">宝宝洗浴</a></li>
+									<li><a href="#">理发器</a></li>
+									<li><a href="#">奶瓶清洗</a></li>
+									<li><a href="#">儿童餐具</a></li>
+									<li><a href="#">水杯</a></li>
+									<li><a href="#">米粉</a></li>
+									<li><a href="#">益生菌</a></li>
+									<li><a href="#">初乳</a></li>
+									<li><a href="#">果泥</a></li>
+								</ul>
+							</div>
+							<div class="tit">
+								<div class="name">玩具和用品</div>
+								<ul>
+									<li><a href="#">婴儿床</a></li>
+									<li><a href="#">婴儿推车</a></li>
+									<li><a href="#">滑板车</a></li>
+									<li><a href="#">学步车</a></li>
+									<li><a href="#">电动车</a></li>
+									<li><a href="#">扭扭车</a></li>
+									<li><a href="#">孕妇装</a></li>
+									<li><a href="#">妈咪包</a></li>
+									<li><a href="#">产后塑身</a></li>
+									<li><a href="#">婴儿外出服</a></li>
+									<li><a href="#">电动车</a></li>
+									<li><a href="#">扭扭车</a></li>
+									<li><a href="#">孕妇装</a></li>
+									<li><a href="#">妈咪包</a></li>
+									<li><a href="#">产后塑身</a></li>
+									<li><a href="#">婴儿外出服</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="title seven"><a href="#"><i></i>中外名酒</a></div>
+					<div class="list">
+						<a href="#">白酒</a>
+						<a href="#">红酒/起泡</a>
+						<a href="#">啤酒</a>
+						
+					</div>
+					<div class="arrow-0">&gt;</div>
+					<div class="line"></div>
+					<div class="subitem">
+						<div class="inner">
+							<div class="tit tit1">
+								<div class="name">泰国</div>
+								<ul>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">新加坡</a></li>
+									<li><a href="#">菲律宾</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">文莱</a></li>
+									<li><a href="#">蓝梦岛</a></li>
+									<li><a href="#">吉隆坡</a></li>
+									<li><a href="#">塞班岛</a></li>
+									<li><a href="#">柬埔寨</a></li>
+									<li><a href="#">马来西亚</a></li>
+									<li><a href="#">越南</a></li>
+									<li><a href="#">下龙湾</a></li>
+									<li><a href="#">吴哥</a></li>
+									<li><a href="#">芽庄</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">新加坡</a></li>
+									<li><a href="#">菲律宾</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">文莱</a></li>
+									<li><a href="#">蓝梦岛</a></li>
+									<li><a href="#">吉隆坡</a></li>
+									<li><a href="#">塞班岛</a></li>
+									<li><a href="#">柬埔寨</a></li>
+									<li><a href="#">马来西亚</a></li>
+									<li><a href="#">越南</a></li>
+									<li><a href="#">下龙湾</a></li>
+									<li><a href="#">吴哥</a></li>
+									<li><a href="#">芽庄</a></li>
+								</ul>
+							</div>
+							<div class="tit">
+								<div class="name">印度尼西亚</div>
+								<ul>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">新加坡</a></li>
+									<li><a href="#">菲律宾</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">文莱</a></li>
+									<li><a href="#">蓝梦岛</a></li>
+									<li><a href="#">吉隆坡</a></li>
+									<li><a href="#">塞班岛</a></li>
+									<li><a href="#">柬埔寨</a></li>
+									<li><a href="#">马来西亚</a></li>
+									<li><a href="#">越南</a></li>
+									<li><a href="#">下龙湾</a></li>
+									<li><a href="#">吴哥</a></li>
+									<li><a href="#">芽庄</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="title eight"><a href="#"><i></i>居家生活</a></div>
+					<div class="list">
+						<a href="#">置物架</a>
+						<a href="#">五金</a>
+						<a href="#">绿植</a>
+						<a href="#">狗粮</a>
+					</div>
+					<div class="arrow-0">&gt;</div>
+					<!--<div class="line"></div>-->
+					<div class="subitem">
+						<div class="inner">
+							<div class="tit tit1">
+								<div class="name">泰国</div>
+								<ul>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">新加坡</a></li>
+									<li><a href="#">菲律宾</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">文莱</a></li>
+									<li><a href="#">蓝梦岛</a></li>
+									<li><a href="#">吉隆坡</a></li>
+									<li><a href="#">塞班岛</a></li>
+									<li><a href="#">柬埔寨</a></li>
+									<li><a href="#">马来西亚</a></li>
+									<li><a href="#">越南</a></li>
+									<li><a href="#">下龙湾</a></li>
+									<li><a href="#">吴哥</a></li>
+									<li><a href="#">芽庄</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">新加坡</a></li>
+									<li><a href="#">菲律宾</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">文莱</a></li>
+									<li><a href="#">蓝梦岛</a></li>
+									<li><a href="#">吉隆坡</a></li>
+									<li><a href="#">塞班岛</a></li>
+									<li><a href="#">柬埔寨</a></li>
+									<li><a href="#">马来西亚</a></li>
+									<li><a href="#">越南</a></li>
+									<li><a href="#">下龙湾</a></li>
+									<li><a href="#">吴哥</a></li>
+									<li><a href="#">芽庄</a></li>
+								</ul>
+							</div>
+							<div class="tit">
+								<div class="name">印度尼西亚</div>
+								<ul>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">新加坡</a></li>
+									<li><a href="#">菲律宾</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">文莱</a></li>
+									<li><a href="#">蓝梦岛</a></li>
+									<li><a href="#">吉隆坡</a></li>
+									<li><a href="#">塞班岛</a></li>
+									<li><a href="#">柬埔寨</a></li>
+									<li><a href="#">马来西亚</a></li>
+									<li><a href="#">越南</a></li>
+									<li><a href="#">下龙湾</a></li>
+									<li><a href="#">吴哥</a></li>
+									<li><a href="#">芽庄</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="title eight"><a href="#"><i></i>京东生鲜</a></div>
+					<div class="list">
+						<a href="#">橙子</a>
+						<a href="#">奇异果</a>
+						<a href="#">北极虾</a>
+						<a href="#">牛排</a>
+					</div>
+					<div class="arrow-0">&gt;</div>
+					<div class="line"></div>
+					<div class="subitem">
+						<div class="inner">
+							<div class="tit tit1">
+								<div class="name">泰国</div>
+								<ul>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">新加坡</a></li>
+									<li><a href="#">菲律宾</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">文莱</a></li>
+									<li><a href="#">蓝梦岛</a></li>
+									<li><a href="#">吉隆坡</a></li>
+									<li><a href="#">塞班岛</a></li>
+									<li><a href="#">柬埔寨</a></li>
+									<li><a href="#">马来西亚</a></li>
+									<li><a href="#">越南</a></li>
+									<li><a href="#">下龙湾</a></li>
+									<li><a href="#">吴哥</a></li>
+									<li><a href="#">芽庄</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">新加坡</a></li>
+									<li><a href="#">菲律宾</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">文莱</a></li>
+									<li><a href="#">蓝梦岛</a></li>
+									<li><a href="#">吉隆坡</a></li>
+									<li><a href="#">塞班岛</a></li>
+									<li><a href="#">柬埔寨</a></li>
+									<li><a href="#">马来西亚</a></li>
+									<li><a href="#">越南</a></li>
+									<li><a href="#">下龙湾</a></li>
+									<li><a href="#">吴哥</a></li>
+									<li><a href="#">芽庄</a></li>
+								</ul>
+							</div>
+							<div class="tit">
+								<div class="name">印度尼西亚</div>
+								<ul>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">新加坡</a></li>
+									<li><a href="#">菲律宾</a></li>
+									<li><a href="#">沙巴</a></li>
+									<li><a href="#">文莱</a></li>
+									<li><a href="#">蓝梦岛</a></li>
+									<li><a href="#">吉隆坡</a></li>
+									<li><a href="#">塞班岛</a></li>
+									<li><a href="#">柬埔寨</a></li>
+									<li><a href="#">马来西亚</a></li>
+									<li><a href="#">越南</a></li>
+									<li><a href="#">下龙湾</a></li>
+									<li><a href="#">吴哥</a></li>
+									<li><a href="#">芽庄</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+				
+				
+			   
+			     <div class="chaoshi_banner_mid fl">
+			     	<div class="chaoshi_carousel">
+			     		<div class="imgshow" style="position: relative;" id="container">
+			     		    <ul class="lunbo" id="list" >
+			     		    	<li><img src="img/第一个轮播6.webp" alt="1"/></li>
+			     		    	<li><img src="img/第一个轮播1.webp" alt="1"/></li>
+			     		    	<li><img src="img/第一个轮播2.webp" alt="2"/></li>
+			     		    	<li><img src="img/第一个轮播3.webp" alt="3"/></li>
+			     		    	<li><img src="img/第一个轮播4.webp" alt="4"/></li>
+			     		    	<li><img src="img/第一个轮播5.webp" alt="5"/></li>
+			     		    	<li><img src="img/第一个轮播6.webp" alt="6"/></li>
+			     		    	<li><img src="img/第一个轮播1.webp" alt="6"/></li>
+			     		    </ul>
+			     		    <a href="#" id="prev" class="arrow"><</a>
+			     			<a href="#" id="next" class="arrow">></a>
+			     		</div>		
+			     	
+				         <div class="chaoshi_carousel_nav clearfix" id="pointa">
+		                 	<a index="1" id="chaoshi_carousel_nav_btn" style="width: 129.167px;" class="on"></a>
+		                 	<a index="2" id="chaoshi_carousel_nav_btn" style="width: 129.167px;"></a>
+		                 	<a index="3" id="chaoshi_carousel_nav_btn" style="width: 129.167px;"></a>
+		                 	<a index="4" id="chaoshi_carousel_nav_btn" style="width: 129.167px;"></a>
+		                 	<a index="5" id="chaoshi_carousel_nav_btn" style="width: 129.167px;"></a>
+		                 	<a index="6" id="chaoshi_carousel_nav_btn" style="width: 129.167px;margin-right: 0;"></a>
+		                 </div>
+			     	</div>
+          </div>
+<!------------------->			       
+			       <ul class="chaoshi_bottom clearfix">
+			       	<li class="chaoshi_bottom_item fl" >
+			       		<a href="#"  class="chaoshi_bottom_link" >
+			       			<img class="chaoshi_bottom_img" src="img/第一个轮播7.webp" >
+			       		</a>
+			       	</li><li class="chaoshi_bottom_item fl">
+			       		<a href="#" class="chaoshi_bottom_link" >
+			       			<img class="chaoshi_bottom_img" src="img/第一个轮播8.webp" >
+			       		</a>
+			       	</li>
+			       </ul>
+			       
+			       <div class="chaoshi_right fr">
+			       	<div class="chaoshi_coupon">
+			       		<p class="chaoshi_right_tt">每日领券</p>
+			       		<p class="chaoshi_right_tip">总有你想要的</p>
+			       		<div class="chaoshi_coupon_bd">
+			       			<a class="chaoshi_coupon_info" href="#" >
+			       				<p class="chaoshi_coupon_info_num1">¥<em>200</em></p>
+			       				<p class="chaoshi_coupon_info_num2">满249可用</p>
+			       				<p class="chaoshi_coupon_info_tip">仅可购买个人护理部分商品</p>
+			       			</a>
+			       			<a class="chaoshi_coupon_more" href="https://a.jd.com/" target="_blank" >更多好券
+			       			</a>
+			       		</div>
+			       	</div>
+			       	<div class="chaoshi_handy">
+			       	   <h4 class="chaoshi_right_tt" ></h4>
+			       	   <p class="chaoshi_right_tip">小物件 大用途</p>
+			       	   <div class="chaoshi_handy_carousel">
+			       	   	  <div  class="chaoshi_handy_carousel_main">
+			       	   	  	<!-- <div id="image-lunbo" style="position: relative;">-->
+					       	   	 <!--<ul  id="secondcontainer" style="left: -100px;">
+					       	   	   <li class="chaoshi_handy_carousel_item "><img src="img/第二个轮播5.webp" class="chaoshi_handy_carousel_img"/></li>
+				       	   	   	   <li class="chaoshi_handy_carousel_item "><img src="img/第二个轮播1.webp" class="chaoshi_handy_carousel_img"/></li>
+				       	   	   	   <li class="chaoshi_handy_carousel_item "><img src="img/第二个轮播2.webp" class="chaoshi_handy_carousel_img"/></li>
+				       	   	   	   <li class="chaoshi_handy_carousel_item "><img src="img/第二个轮播3.webp" class="chaoshi_handy_carousel_img"/></li>
+				       	   	   	   <li class="chaoshi_handy_carousel_item "><img src="img/第二个轮播4.webp" class="chaoshi_handy_carousel_img"/></li>
+				       	   	   	   <li class="chaoshi_handy_carousel_item "><img src="img/第二个轮播5.webp" class="chaoshi_handy_carousel_img"/></li>
+				       	   	       <li class="chaoshi_handy_carousel_item on"><img src="img/第二个轮播1.webp" class="chaoshi_handy_carousel_img"/></li>
+					       	   	 </ul>
+			       	   	     </div>-->
+			       	   	     
+			       	   	     <div class="image-lunbo">
+			                     <img src="img/第二个轮播1.webp">
+		                     	<img src="img/第二个轮播2.webp">
+		                    	<img src="img/第二个轮播3.webp">
+			                    <img src="img/第二个轮播4.webp">
+			                    <img src="img/第二个轮播5.webp"/>
+		                     </div>
+			       	   	     
+			       	   	     <a class="chaoshi_handy_carousel_enter">进入&gt;</a>
+			     
+			       	   	   </div>
+			       	   	   <div class="chaoshi_handy_carousel_nav clearfix" id="pointasecond">
+			       	   	   	    <a href="#" id="chaoshi_handy_carousel_nav_btn" class="on"></a>
+			       	   	   	    <a href="#" id="chaoshi_handy_carousel_nav_btn"></a>
+			       	   	   	    <a href="#" id="chaoshi_handy_carousel_nav_btn"></a>
+			       	   	   	    <a href="#" id="chaoshi_handy_carousel_nav_btn"></a>
+			       	   	   	    <a href="#" id="chaoshi_handy_carousel_nav_btn"></a>
+			       	   	   </div>
+			       	   </div>
+			      </div>
+            </div>
+<!------版心部分结束---------------------------->     	
+      <!--------展示栏区域开始-品牌特惠部分--------------------->
+        <div class="chaoshi_brand w" id="chaoshi_brand_5">
+        	<div class="chaoshi_mod_head">
+        		<h3 class="chaoshi_mod_head_title">品牌特卖</h3>
+        	</div>
+        	<div class="chaoshi_brand_row ">
+        		<a class="chaoshi_brand_today" href="#">
+        			<img src="img/品牌特卖01.webp"></a>
+        			<div class="chaoshi_brand_list chaoshi_brand_big ">
+        				<a class="chaoshi_brand_item" href="//pro.jd.com/mall/active/2YERUVEu2Q5PW57kSUNcVdKTgRQf/index.html" target="_blank">
+        					<img src="img/品牌特卖02.webp"></a>
+        					<a class="chaoshi_brand_item" href="//prodev.jd.com/mall/active/YnvZCPvHvn8y74Zr6zgvRBbEmpn/index.html" target="_blank" >
+        						<img src="img/品牌特卖03.webp"  ></a>
+        						<a class="chaoshi_brand_item" href="//prodev.jd.com/mall/active/45EYLbiG9ykCFbFedNdUkJvUSd4H/index.html" target="_blank" >
+        							<img src="img/品牌特卖04.webp">
+        						</a>
+        						<a class="chaoshi_brand_item" href="//pro.jd.com/mall/active/2sitgqtGmsCRKo7KZXDTTYs1wFxy/index.html" target="_blank" >
+        							<img src="img/品牌特卖05.webp">
+        						</a>
+        			</div>
+        	</div>
+        	<div class="chaoshi_brand_row ">
+        		<div class="chaoshi_brand_list chaoshi_brand_small clearfix">
+        			<a class="chaoshi_brand_item" href="//mall.jd.com/index-1000082344.html" target="_blank" >
+        				<img src="img/品牌特卖06.webp" >
+        			</a>
+        			<a class="chaoshi_brand_item" href="//mall.jd.com/index-1000016561.html?from=pc" >
+        				<img src="img/品牌特卖07.webp" >
+        			</a>
+        			<a class="chaoshi_brand_item" href="//pro.jd.com/mall/active/23MHtLkyUwfBmzocrFXDqWBW1mPe/index.html" >
+        				<img src="img/品牌特卖08.webp" >
+        			</a>
+        			<a class="chaoshi_brand_item" href="//prodev.jd.com/mall/active/3UFae1qBdyg8sqmPe9UDfmUMCLF5/index.html" target="_blank" >
+        				<img src="img/品牌特卖09.webp" >
+        			</a>
+        			<a class="chaoshi_brand_item" href="//item.jd.com/4818109.html" target="_blank">
+        				<img src="img/品牌特卖10.webp" >
+        			</a>
+        		</div>
+        		<a class="chaoshi_brand_more" href="#"  target="_blank" >
+        			<img src="img/品牌特卖11.webp" >
+        		</a>
+        	</div>
+        </div>
+      <!--------结束--------------------->    
+      <!--------奶制品部分--------------------->
+          <div class="chaoshi_category w" id="chaoshi_category_8">
+          	<div class="chaoshi_mod_head grid_c1">
+          		<h3 class="chaoshi_mod_head_title">奶制品</h3>
+          	</div>
+          	<div class="chaoshi_category_bd w">
+          		<div class="chaoshi_category_focus">
+          			<a class="chaoshi_category_focus_pic" href="#">
+          				<img src="img/奶制品1.webp">
+          			</a>
+          			<div class="chaoshi_category_focus_key">
+          				<div class="chaoshi_category_focus_key_inner">
+          					<a href="#" >早餐奶</a>
+          					<a href="#" >纯牛奶</a>
+          					<a href="#" >风味奶</a>
+          					<a href="#">酸奶</a>
+          					<a href="#" >成人奶粉</a>
+          					<a href="#">乳酸菌</a>
+          					<a href="#">欧德堡</a>
+          					<a href="#">蒙牛</a>
+          				</div>
+          			</div>
+          		</div>
+          		<div class="goods chaoshi_category_goods clearfix">
+          			<ul class="chaoshi_category_ul goods_list">
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/奶制品2.webp">
+          					</a>
+          					<p class="goods_title">蒙牛 纯牛奶 PURE MILK 250ml*16 礼盒装</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price" >¥49.50</p>
+          						<p class="goods_prices_plus" >
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/奶制品3.webp">
+          					</a>
+          					<p class="goods_title">德国 进口牛奶 Arla爱氏晨曦 全脂纯牛奶 200ml*24 整箱装</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price" >¥69.90</p>
+          						<p class="goods_prices_plus" >
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/奶制品4.webp">
+          					</a>
+          					<p class="goods_title">力大狮 Lactasoy 原味豆奶 125ml*6盒 泰国进口 营养早餐 豆奶</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price" >¥12.50</p>
+          						<p class="goods_prices_plus" >
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#" target="_blank" >
+          						<img class="J_goods_img goods_img" src="img/奶制品5.webp">
+          					</a>
+          						<p class="goods_title">蒙牛 纯甄 常温酸牛奶   芒果百香果口味   200g*16 礼盒装</p>
+          						<div class="goods_prices clearfix">
+          							<p class="J_goods_price goods_price" >¥76.89</p>
+          							<p class="goods_prices_plus">
+          								<em class="goods_prices_plus_txt"></em>
+          								<i class="goods_prices_plus_icon"></i>
+          						    </p>
+          						</div>
+          						<a class="J_goods_add goods_add" href="#">
+          							<i class="goods_add_icon"></i>
+          							<span class="goods_add_txt">加入购物车</span>
+          						</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          					<img class="J_goods_img goods_img" src="img/奶制品6.webp">
+          	     			</a>
+          	     			<p class="goods_title">德国DMK进口牛奶  欧德堡（Oldenburger）超高温处理脱脂牛奶200ml*24盒</p>
+          	     			<div class="goods_prices clearfix">
+          	     				<p class="J_goods_price goods_price" >¥49.00</p>
+          	     				<p class="goods_prices_plus" >
+          	     					<em class="goods_prices_plus_txt"></em>
+          	     					<i class="goods_prices_plus_icon"></i>
+          	     				</p>
+          	     			</div>
+          	     			<a class="J_goods_add goods_add" href="#" >
+          	     				<i class="goods_add_icon"></i>
+          	     				<span class="goods_add_txt">加入购物车</span>
+          	     			</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#" >
+          						<img class="J_goods_img goods_img" src="img/奶制品7.webp">
+          					</a>
+          					<p class="goods_title">新西兰原装进口 安佳（Anchor）全脂乳粉 成人全脂奶粉 调制乳粉 400g袋装</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price" >¥39.00</p>
+          						<p class="goods_prices_plus" >
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/奶制品8.webp"></a>
+          						<p class="goods_title">优乐多 乳酸菌 饮料 牛奶 发酵 益生菌 100ml*20瓶 京东 自营</p>
+          						<div class="goods_prices clearfix">
+          							<p class="J_goods_price goods_price">¥24.90</p>
+          							<p class="goods_prices_plus">
+          								<em class="goods_prices_plus_txt"></em>
+          								<i class="goods_prices_plus_icon"></i>
+          							</p>
+          						</div>
+          						<a class="J_goods_add goods_add" href="#">
+          							<i class="goods_add_icon"></i>
+          							<span class="goods_add_txt">加入购物车</span>
+          						</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/奶制品9.webp">
+          					</a>
+          					<p class="goods_title">澳大利亚 进口牛奶 德运（Devondale）脱脂牛奶 1L*10 整箱装</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price">¥109.00</p>
+          						<p class="goods_prices_plus">
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/奶制品10.webp">
+          					</a>
+          					<p class="goods_title">伊利 中老年奶粉双听加量礼盒 送父母礼物（限量款）</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price">¥155.00</p>
+          						<p class="goods_prices_plus">
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/奶制品11.webp">
+          					</a>
+          					<p class="goods_title">力大狮 Lactasoy 原味豆奶 250ml*12盒  泰国进口 营养早餐 豆奶</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price" >¥47.80</p>
+          						<p class="goods_prices_plus">
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          			</ul>
+          		</div>
+          	</div>
+          </div>                                                                                                          
+         <!--------结束--------------------->    
+          </div>
+          
+          <!--------奶制品部分--------------------->
+          <div class="chaoshi_category w" id="chaoshi_category_8">
+          	<div class="chaoshi_mod_head grid_c1">
+          		<h3 class="chaoshi_mod_head_title">水饮冲泡</h3>
+          	</div>
+          	<div class="chaoshi_category_bd w">
+          		<div class="chaoshi_category_focus">
+          			<a class="chaoshi_category_focus_pic" href="#">
+          				<img src="img/饮料1.webp">
+          			</a>
+          			<div class="chaoshi_category_focus_key">
+          				<div class="chaoshi_category_focus_key_inner">
+          					<a href="#" >饮用水</a>
+          					<a href="#" >饮料</a>
+          					<a href="#" >冲调</a>
+          					<a href="#">咖啡/奶茶</a>
+          					<a href="#" >蜂蜜/柚子茶</a>
+          					<a href="#">营养麦片</a>
+          					<a href="#">茶叶礼盒</a>
+          					<a href="#">进口饮料</a>
+          				</div>
+          			</div>
+          		</div>
+          		<div class="goods chaoshi_category_goods clearfix">
+          			<ul class="chaoshi_category_ul goods_list">
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/饮料2.webp">
+          					</a>
+          					<p class="goods_title">生晒新会小青柑500g 大份量木桶装 茶叶礼盒装</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price" >¥78.00</p>
+          						<p class="goods_prices_plus" >
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/饮料3.webp">
+          					</a>
+          					<p class="goods_title">寿全斋 红糖姜茶 大姨妈茶姜糖月经红糖速溶</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price" >¥17.80</p>
+          						<p class="goods_prices_plus" >
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/饮料4.webp">
+          					</a>
+          					<p class="goods_title">加多宝 凉茶植物饮料 茶饮料 整箱装</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price" >¥36.9</p>
+          						<p class="goods_prices_plus" >
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#" target="_blank" >
+          						<img class="J_goods_img goods_img" src="img/饮料5.webp">
+          					</a>
+          						<p class="goods_title">小罐茶 茶叶金罐经典茶叶拼装礼盒</p>
+          						<div class="goods_prices clearfix">
+          							<p class="J_goods_price goods_price" >¥999.00</p>
+          							<p class="goods_prices_plus">
+          								<em class="goods_prices_plus_txt"></em>
+          								<i class="goods_prices_plus_icon"></i>
+          						    </p>
+          						</div>
+          						<a class="J_goods_add goods_add" href="#">
+          							<i class="goods_add_icon"></i>
+          							<span class="goods_add_txt">加入购物车</span>
+          						</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          					<img class="J_goods_img goods_img" src="img/饮料6.webp">
+          	     			</a>
+          	     			<p class="goods_title">恒大冰泉 长白山天然弱碱性 矿泉水 整箱装</p>
+          	     			<div class="goods_prices clearfix">
+          	     				<p class="J_goods_price goods_price" >¥36.90</p>
+          	     				<p class="goods_prices_plus" >
+          	     					<em class="goods_prices_plus_txt"></em>
+          	     					<i class="goods_prices_plus_icon"></i>
+          	     				</p>
+          	     			</div>
+          	     			<a class="J_goods_add goods_add" href="#" >
+          	     				<i class="goods_add_icon"></i>
+          	     				<span class="goods_add_txt">加入购物车</span>
+          	     			</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#" >
+          						<img class="J_goods_img goods_img" src="img/饮料7.webp">
+          					</a>
+          					<p class="goods_title">脉动（Mizone）青柠口味维生素饮料 整箱装</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price" >¥52.90</p>
+          						<p class="goods_prices_plus" >
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/饮料8.webp"></a>
+          						<p class="goods_title">德国DMK进口酸奶 欧德堡（Oldenburge）巴氏杀菌处理</p>
+          						<div class="goods_prices clearfix">
+          							<p class="J_goods_price goods_price">¥59.90</p>
+          							<p class="goods_prices_plus">
+          								<em class="goods_prices_plus_txt"></em>
+          								<i class="goods_prices_plus_icon"></i>
+          							</p>
+          						</div>
+          						<a class="J_goods_add goods_add" href="#">
+          							<i class="goods_add_icon"></i>
+          							<span class="goods_add_txt">加入购物车</span>
+          						</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/饮料9.webp">
+          					</a>
+          					<p class="goods_title">百岁山 饮用天然矿泉水570ml*24瓶</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price">¥48.90</p>
+          						<p class="goods_prices_plus">
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/饮料10.webp">
+          					</a>
+          					<p class="goods_title">伊藤园乌龙茶</p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price">¥55.90</p>
+          						<p class="goods_prices_plus">
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          				<li class="J_goods_item goods_item">
+          					<a class="goods_pic" href="#">
+          						<img class="J_goods_img goods_img" src="img/饮料11.webp">
+          					</a>
+          					<p class="goods_title">忆江南 茶叶乌龙茶 安溪特级铁观音 </p>
+          					<div class="goods_prices clearfix">
+          						<p class="J_goods_price goods_price" >¥168.00</p>
+          						<p class="goods_prices_plus">
+          							<em class="goods_prices_plus_txt"></em>
+          							<i class="goods_prices_plus_icon"></i>
+          						</p>
+          					</div>
+          					<a class="J_goods_add goods_add" href="#">
+          						<i class="goods_add_icon"></i>
+          						<span class="goods_add_txt">加入购物车</span>
+          					</a>
+          				</li>
+          			</ul>
+          		</div>
+          	</div>
+          </div>                                                                                                          
+         <!--------结束--------------------->    
+          </div>
+          
+          
+          
+          
+<!------主体部分结束------------------------>
+ 
+<!------底部部分开始------------------------>
+    <div id="cmsfooter">
+    	<div id="service-2020">
+    		<div class="w" >
+    			<ol class="slogen">
+    				<li class="item fore1">
+    					<i>多</i>品类齐全，轻松购物
+    				</li>
+    				<li class="item fore2"><i>快</i>多仓直发，极速配送
+    				</li>
+    				<li class="item fore3"><i>好</i>正品行货，精致服务
+    				</li>
+    				<li class="item fore4"><i>省</i>天天低价，畅选无忧
+    				</li>
+    			</ol>
+    		</div>
+    		<div class="jd-help">
+    			<div class="w" style="height: 200px;">
+    				<div class="wrap">
+    					<dl class="fore1">
+    						<dt>购物指南</dt>
+    						<dd>
+    							<a  href="#">购物流程</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">会员介绍</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">生活旅行/团购</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">常见问题</a>
+    						</dd>
+    						<dd>
+    							<a   href="#">大家电</a>
+    						</dd>
+    						<dd>
+    							<a   href="#">联系客服</a>
+    						</dd>
+    					</dl>
+    					<dl class="fore2">
+    						<dt>配送方式</dt>
+    						<dd>
+    							<a  href="#">上门自提</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">211限时达</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">配送服务查询</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">配送费收取标准</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">海外配送</a>
+    						</dd>
+    					</dl>
+    					<dl class="fore3">
+    						<dt>支付方式</dt>
+    						<dd>
+    							<a  href="#">货到付款</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">在线支付</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">分期付款</a>
+    						</dd>
+    						<dd>
+    							<a href="#">公司转账</a>
+    						</dd>
+    					</dl>
+    					<dl class="fore4">
+    						<dt>售后服务</dt>
+    						<dd>
+    							<a  href="#">售后政策</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">价格保护</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">退款说明</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">返修/退换货</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">取消订单</a>
+    						</dd>
+    					</dl>
+    					<dl class="fore5">
+    						<dt>特色服务</dt>
+    						<dd>
+    							<a  href="#">夺宝岛</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">DIY装机</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">延保服务</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">京东E卡</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">京东通信</a>
+    						</dd>
+    						<dd>
+    							<a  href="#">京鱼座智能</a>
+    						</dd>
+    					</dl>
+    					<span class="clr"></span>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+<!---------------------------------------------------------------------->
+    	<div id="footer-2020 w">
+    		    <div class="footer-link-2020">
+                <a href="#">关于我们</a>
+                <span id="">|</span>
+                <a href="#">联系我们</a>
+                <span id="">|</span>
+                <a href="#">联系客服</a>
+                <span id="">|</span>
+                <a href="#">合作招商</a>
+                <span id="">|</span>
+                <a href="#">商家帮助</a>
+                <span id="">|</span>
+                <a href="#">营销中心</a>
+                <span id="">|</span>
+                <a href="#">手机京东</a>
+                <span id="">|</span>
+                <a href="#">友情链接</a>
+                <span id="">|</span>
+                <a href="#">销售联盟</a>
+                <span id="">|</span>
+                <a href="#">京东社区</a>
+                <span id="">|</span>
+                <a href="#">风险监测</a>
+                <span id="">|</span>
+                <a href="#">隐私政策</a>
+                <span id="">|</span>
+                <a href="#">京东公益</a>
+                <span id="">|</span>
+                <a href="#">Enlish Site</a>
+                <span id="">|</span>
+                <a href="#">Madia & IR</a>
+            </div>
+            
+             <div class="footer-info w">
+                <p><a href="#">京公网安备 11000002000088号</a><span>|</span><a href="#">京ICP证070359号</a><span>|</span><a href="#">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a><span>|</span><a href="#">新出发京零 字第大120007号</a></p>
+                <p><a href="#">互联网出版许可证编号新出网证(京)字150号</a><span>|</span><a href="#">出版物经营许可证</a><span>|</span><a href="#">网络文化经营许可证京网文[2014]2148-348号</a><span>|</span><a href="#">违法和不良信息举报电话：4006561155</a></p>
+                <p><a href="#">Copyright ? 2004 - 2017 京东JD.com 版权所有</a><span>|</span><a href="#">消费者维权热线：4006067733经营证照</a></p>
+                <p class="footer-info-p">
+                    <a href="#">
+                        <span class="footer-info-flag"></span><a>Global Site</a>
+                    </a>
+                    <span>|</span>
+                    <a href="#">
+                        <span class="footer-info-flag"></span><a>Сайт России</a>
+                    </a>
+                    <span>|</span>
+                    <a href="#">
+                        <span class="footer-info-flag"></span><a>Situs Indonesia</a>
+                    </a>
+                    <span>|</span>
+                    <a href="#">
+                        <span class="footer-info-flag"></span><a>Sitio de España</a>
+                    </a>
+                    <span>|</span>
+                    <a href="#">
+                        <span class="footer-info-flag"></span><a>เว็บไซต์ประเทศไทย</a>
+                    </a>
+                </p>
+                <p><a href="#">京东旗下网站：京东支付</a><span>|</span><a href="#">京东云</a></p>
+            </div>
+            <p class="footer-auth " style="text-align: center;">
+                <a href="#" class="tips2"></a>
+                <a href="#" class="tips3"></a>
+                <a href="#" class="tips4"></a>
+                <a href="#" class="tips5"></a>
+                <a href="#" class="tips6"></a>
+            </p>
+            
+    	</div>
+    </div>
+<!------底部部分结束------------------------>
+<!--------------左边栏开始-------------------------->
+ <div class="leftfixed">
+ 	<ul class="chaoshi_lift_list">
+ 		<li class="chaoshi_lift_item" id="leftfixed1"><a class="chaoshi_lift_item_btn">家庭量贩</a></li>
+ 	    <li class="chaoshi_lift_item" id="leftfixed2"><a class="chaoshi_lift_item_btn">品牌特卖</a></li>
+ 	    <li class="chaoshi_lift_item" id="leftfixed3"><a class="chaoshi_lift_item_btn">奶制品</a></li>
+ 	    <li class="chaoshi_lift_item" id="leftfixed4"><a class="chaoshi_lift_item_btn">水饮冲调</a></li>
+ 	     <li class="chaoshi_lift_item" id="leftfixed5"><a class="chaoshi_lift_item_btn">回到顶部</a></li>
+ 	</ul>
+ </div>
+<!---------------右边栏------------------------------------------->
+  <div class="jdm-toolbar-tabs J-tab">          
+  	<div   class="J-trigger jdm-toolbar-tab jdm-tbar-tab-jdvip">                            
+  		<i class="tab-ico"></i>              
+  		<em class="tab-text" style="display: none;">京东会员</em>                       
+  	</div>                     
+  	<div  class="J-trigger jdm-toolbar-tab jdm-tbar-tab-cart">     
+  		<i class="tab-ico"></i>   
+  		<em class="tab-text" style="display: none;">购物车</em>      
+  		                  
+  	</div>                
+  	<div  class="J-trigger jdm-toolbar-tab jdm-tbar-tab-follow">    
+  		<i class="tab-ico"></i>               
+  		<em class="tab-text" style="display: none;">我的关注 </em>       
+  		                     
+  	</div>                        
+  	<div  class="J-trigger jdm-toolbar-tab jdm-tbar-tab-history">         
+  		<i class="tab-ico"></i>                       
+  		<em class="tab-text" style="display: none;">我的足迹 </em>           
+  		               
+  	</div>                     
+  	<div class="J-trigger jdm-toolbar-tab jdm-tbar-tab-message">
+  		<a target="_blank" href="//joycenter.jd.com/msgCenter/queryHistoryMessage.action">  
+  			<i class="tab-ico"></i>                
+  			<em class="tab-text" style="display: none;">我的消息 </em> 
+  		</a>                 
+  		          
+  	</div>                  
+  	<div class="J-trigger jdm-toolbar-tab jdm-tbar-tab-jimi">    
+  		<i class="tab-ico"></i>                  
+  		<em class="tab-text hide" style="display: none;">咨询JIMI</em>             
+  		                 
+  		</div>                      
+  	</div>                    
+  </div>
+ 
+ 
+ 
+	</body>
+	
+	
+	
+	
+	<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app-许晨.js"></script>
+	<!--<script type="text/javascript" src="js/smalllunbo.js"></script>-->
+	<script type="text/javascript" src="js/smallapp.js"></script>
+	<script type="text/javascript" src="js/LoopSlider-许晨.js"></script>
+	<script type="text/javascript" src="js/左边栏固定.js"></script>
+	<script type="text/javascript" src="js/右边栏js.js"></script>
+	<script src="js/顶部下拉动画效果.js" type="text/javascript" charset="utf-8"></script>
+		
+	
+	 <script>
+			LoopSlider.init({
+				el: ".image-lunbo", //选择器
+				navigator: {
+					//前进后退按钮
+					prevEl: ".prev",
+					nextEl: ".next"
+				},
+				easing: "ease", //动画效果cubic-bezier(0.985, -0.060, 0.000, 1.320)
+				duration: 300, //过渡时间，默认为3000ms,
+				autoplay: 1000, //boolean 和 number 设置为true 默认延时为3s,如果设置为1000，延时为1s
+			})
+		</script>    
+		
+	<script type="text/javascript">
+	$(function(){
+		//首页旅游产品分类
+		$(".product_sort .bd .item").hover(function(){
+			$(this).addClass("layer");
+		},function(){
+			$(this).removeClass("layer");
+		});
+	})
+	</script>
+
+</html>

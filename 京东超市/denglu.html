@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/dl.css">
+</head>
+
+<body>
+    <!-- 顶层 -->
+    <div class="w">
+        <div class="jdlogo">
+            <a href="#"><img src="img/jdlogo-201708-@1x.png" alt=""></a>
+            <div></div>
+        </div>
+        <a href="#">📜登陆页面，调查问卷</a>
+    </div>
+    <!-- 第二层 -->
+    <div class="tips">
+        <div class="tips-inner w">
+            <i class="tips-logo"></i>
+            <p>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版<a href="#">《京东隐私政策》</a>已上线，将更有利于保护您的个人隐私。</p>
+        </div>
+
+        <!-- <p>依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！ 新版<a href="#">《京东隐私政策》</a>已上线，将更有利于保护您的个人隐私。</p> -->
+    </div>
+    <!-- 第三层 -->
+    <div class="main">
+        <div class="main-inner">
+            <div class="w">
+                <div class="inner-bg"></div>
+            </div>
+        </div>
+        <div class="w">
+            <div class="form">
+                <div class="form-tips">
+                    <i class="tips-logo"></i>
+                    <p>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+                </div>
+                <div class="form-tab">
+                    <div class="form-tabl"><a href="#">扫码登陆</a></div>
+                    <div class="form-tabr"><a href="#">账户登陆</a></div>
+                </div>
+                <div class="form-show">
+                    <div class="show-main" style="display: block;">
+                        <div class="show-mainl"><img src="img/show.png" alt=""></div>
+                        <div class="show-mainr"></div>
+                        <div class="show-tips">
+                            <p>打开<a href="#" style="color: red;text-decoration: none;">手机京东</a></p>
+                            <p>扫码二维码</p>
+                            <div class="form-quick">
+                                <p>免输入</p>
+                                <p>更快</p>
+                                <p>更安全</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-password" style="display: none;">
+                        <div class="login-user">
+                            <label for="loginname" class="lable-name"></label>
+                            <input type="text" name="" id="loginname" placeholder="邮箱/用户名/登录手机">
+                        </div>
+                        <div class="login-pwd">
+                            <label for="loginpwd" class="lable-pwd"></label>
+                            <input type="password" name="" id="loginpwd" placeholder="密码">
+                        </div>
+                        <div class="forgetpwd">忘记密码</div>
+                        <div class="denglu">
+                            <a href="../jdfresh/fresh1.html" class="denglu-a" style="text-decoration: none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;登录</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="login">
+                    <div class="login-left">
+                        <a href="#">
+                            <i class="qq"></i>QQ
+                        </a>
+                        <a href="#">
+                            <i class="b"></i>微信
+                        </a>
+                    </div>
+                    <a href="#" class="login-right" style="color: red;">
+                        <i></i> 立即注册
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 第四层 -->
+    <div class="footer w">
+        <div class="footer-top">
+            <a href="#">关于我们</a>
+            <span>|</span>
+            <a href="#">联系我们</a>
+            <span>|</span>
+            <a href="#">人才招聘</a>
+            <span>|</span>
+            <a href="#">商家入驻</a>
+            <span>|</span>
+            <a href="#">广告服务</a>
+            <span>|</span>
+            <a href="#">手机京东</a>
+            <span>|</span>
+            <a href="#">友情了解</a>
+            <span>|</span>
+            <a href="#">销售联盟</a>
+            <span>|</span>
+            <a href="#">京东社区</a>
+            <span>|</span>
+            <a href="#">京东公益</a>
+            <span>|</span>
+            <a href="#">English Site</a>
+        </div>
+        <div class="footer-bottom">Copyright © 2004-2020 京东JD.com 版权所有</div>
+    </div>
+</body>
+<script src="../js/jquery-1.8.2.js"></script>
+<script>
+    $(function() {
+        $(".form-tabr").click(function() {
+            $(".form-password").css("display", "block").siblings().css("display", "none");
+            $(".form-tabr a").css("color", "#e4393C");
+            $(".form-tabl a").css("color", "#666666");
+        })
+        $(".form-tabl").click(function() {
+            $(".show-main").css("display", "block").siblings().css("display", "none");
+            $(".form-tabl a").css("color", "#e4393C");
+            $(".form-tabr a").css("color", "#666666");
+        })
+
+        $(".denglu").click(function() {
+            if ($(".login-user input").css("placeholder", "邮箱/用户名/登录手机")) {
+                alert("用户名或密码未输入");
+                $(".denglu a").css("href", "#");
+            } else {
+                $(".denglu a").css("href", "../jdfresh/fresh1.html");
+            }
+        })
+    })
+</script>
+
+</html>

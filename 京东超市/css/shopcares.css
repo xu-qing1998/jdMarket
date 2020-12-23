@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "微软雅黑";
+    background-color: #ffffff;
+}
+
+.top {
+    height: 30px;
+    background-color: #E3E4E5;
+}
+
+.box1 ul {
+    list-style: none;
+    position: absolute;
+}
+
+.box1 {
+    width: 1190px;
+    height: 30px;
+    margin: auto;
+    position: relative;
+}
+
+.top ul li {
+    height: 30px;
+    float: left;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.top_left {
+    left: 0px;
+}
+
+.top_right {
+    top: 0;
+    right: 0;
+}
+
+.top_right li {
+    margin-right: 20px;
+}
+
+.top .top_left li {
+    float: left;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.top ul li a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.middle {
+    width: 990px;
+    height: 100px;
+    margin: auto;
+    top: 30px;
+    left: 50%;
+    margin-left: -495px;
+    position: relative;
+}
+
+.middle .logo1 {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 134px;
+    height: 50px;
+    background-image: url(../img/jdlogo-201708-@1x.png);
+}
+
+.search {
+    width: 320px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search input {
+    width: 270px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    border: none;
+    border: 1px #C91623 solid;
+}
+
+.search div {
+    float: left;
+    width: 50px;
+    height: 26spx;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 26px;
+    background-color: #C91623;
+    font-size: 12px;
+    color: white;
+}
+
+.main {
+    width: 1090px;
+    position: relative;
+    margin: auto;
+}
+
+.main .main_top {
+    width: 990px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #C91623;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.main .main_top input {
+    border: none;
+    color: #C91623;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.main .main_top .main_top_left {
+    position: absolute;
+    float: left;
+}
+
+.main .main_top .main_top_right {
+    float: right;
+}
+
+.main_top_right span {
+    color: #999999;
+    font-weight: normal;
+}
+
+#adress {
+    height: 20px;
+    color: #999999;
+}
+
+.cart-thead {
+    height: 32px;
+    line-height: 32px;
+    margin: 5px 0 10px;
+    padding: 5px 0;
+    background: #f3f3f3;
+    border: 1px solid #e9e9e9;
+    border-top: 0;
+    position: relative;
+}
+
+.cart-thead>div,
+.cart-item>div {
+    float: left;
+}
+
+.t-checkbox,
+.p-checkbox {
+    height: 18px;
+    line-height: 18px;
+    padding-top: 7px;
+    width: 122px;
+    padding-left: 11px;
+}
+
+.t-goods {
+    width: 400px;
+}
+
+.t-price {
+    width: 120px;
+    padding-right: 40px;
+    text-align: right;
+}
+
+.t-num {
+    width: 150px;
+    text-align: center;
+}
+
+.t-sum {
+    width: 100px;
+    text-align: right;
+}
+
+.t-action {
+    width: 130px;
+    text-align: right;
+}
+
+.main_first {
+    width: 1090px;
+    height: 200px;
+    border: 1px #E3E4E5 solid;
+    border-top: 3px solid #222222;
+    position: relative;
+}
+
+.main_second {
+    width: 1090px;
+    height: 200px;
+    position: relative;
+    border: 1px #E3E4E5 solid;
+    border-top: 3px solid #222222;
+}
+
+.p-checkbox {
+    position: absolute;
+    top: 30px;
+}
+
+.products {
+    width: 410px;
+    height: 110px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.products div {
+    float: left;
+}
+
+.photograph {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 15px;
+}
+
+.photograph1 {
+    background-image: url(../img/dcf50b2d36cd798a.jpg);
+}
+
+.photograph2 {
+    background-image: url(../img/8d7cabd2a2eb0bc2.jpg);
+}
+
+.introduce {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: 80px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.products_tips {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: 300px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.products_price {
+    position: absolute;
+    top: 80px;
+    left: 600px;
+    float: left;
+    width: 80px;
+    height: 30px;
+    color: rgb(58, 129, 58);
+}
+
+.counts {
+    width: 80px;
+    height: 20px;
+    position: absolute;
+    top: 80px;
+    left: 730px;
+}
+
+.counts input {
+    width: 45px;
+    height: 20px;
+    position: absolute;
+    left: 17px;
+    border: 1px #999999 solid;
+    top: 0;
+    text-align: center;
+}
+
+.counts>span {
+    float: left;
+    width: 18px;
+    height: 22px;
+    background-color: #E3E4E5;
+    text-align: center;
+    line-height: 22px;
+}
+
+.discrease {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.increase {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.subtotal {
+    width: 100px;
+    height: 30px;
+    border: 1px solid;
+    position: absolute;
+    top: 80px;
+    left: 880px;
+    text-align: center;
+    border: none;
+}
+
+#btn2 {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    background-color: #C91623;
+    color: white;
+}
+
+.bottom {
+    width: 1090px;
+    height: 40px;
+    background-color: #E3E4E5;
+    position: relative;
+}
+
+.delete {
+    float: left;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    color: #999999;
+    left: 80px;
+}
+
+.check-cart-item {
+    background: #fff4e8;
+}
+
+.end {
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    right: 200px;
+    top: 10px;
+}
+
+.end>div {
+    float: left;
+    position: absolute;
+    top: 0;
+}
+
+.end_left {
+    left: 0;
+}
+
+.end input {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    color: #C91623;
+    border: none;
+    left: 50px;
+    background-color: #E3E4E5;
+}
+
+.end_right {
+    position: absolute;
+    right: 0;
+}
+
+.sum {
+    float: left;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.sum div {
+    float: left;
+}
+
+.sum_left {
+    left: 0;
+}
+
+.sum input {
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    text-align: left;
+    color: #C91623;
+    border: none;
+    right: 0;
+    background-color: #E3E4E5;
+}
+
+.sum_center {
+    position: absolute;
+    left: 30px;
+}
